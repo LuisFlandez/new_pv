@@ -1,13 +1,12 @@
-// Toggle navbar background on scroll
 window.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
   const toggleBg = () => {
     if (window.scrollY > 0) {
-      nav.classList.add('bg-light', 'navbar-light');
-      nav.classList.remove('bg-transparent', 'navbar-dark');
+      nav.classList.add('bg-light');
+      nav.classList.remove('bg-transparent');
     } else {
-      nav.classList.add('bg-transparent', 'navbar-dark');
-      nav.classList.remove('bg-light', 'navbar-light');
+      nav.classList.add('bg-transparent');
+      nav.classList.remove('bg-light');
     }
   };
   toggleBg();
