@@ -1,4 +1,5 @@
 
+// Toggle navbar background on scroll
 window.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
   const toggleBg = () => {
