@@ -12,13 +12,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  nav.classList.add('w-100');
+  
   const adjustPosition = () => {
     if (window.scrollY > 0) {
       nav.classList.remove('position-absolute');
-      nav.classList.add('position-fixed', 'top-0', 'w-100');
+      nav.classList.add('position-fixed', 'top-0');
     } else {
       nav.classList.add('position-absolute');
-      nav.classList.remove('position-fixed','top-0', 'w-100');
+      nav.classList.remove('position-fixed','top-0');
     }
   };
   const onScroll = () => {
