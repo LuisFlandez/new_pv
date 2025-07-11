@@ -34,7 +34,6 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="audiencia.html">Sala de audiencia</a></li>
-              <li><a class="dropdown-item" href="atencion.html">Atención de Publico</a></li>
               <li><a class="dropdown-item" href="buzon.html">Buzón</a></li>
             </ul>
           </li>
@@ -62,25 +61,37 @@
 </div>
 
   
-<div class="card shadow-sm" style="max-width: 500px;">
-  <div class="card-body">
-    <h5 class="card-title">Atención al Publico.</h5>
-    <p class="card-text">Consulta los medios de atención disponibles.</p>
-    <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#contenidoPrincipal">
-      Ver más
+<div class="card border-light shadow-sm" style="max-width: 500px;">
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">Atención de público</h5>
+    
+    <div class="d-flex align-items-center justify-content-center mb-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Icono atención" width="80" class="me-3">
+      <ul class="list-unstyled text-start mb-0">
+        <li>- Atención virtual</li>
+        <li>- Números de contacto</li>
+        <li>- Presentación de recursos</li>
+        <li>y más...</li>
+      </ul>
+    </div>
+
+    <button class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#contenidoPrincipal">
+      Entrar
     </button>
 
-    <div class="collapse mt-3" id="contenidoPrincipal">
-      
+    <!-- Contenido oculto al inicio -->
+    <div class="collapse mt-4 text-start" id="contenidoPrincipal">
+
       <h6 class="text-success">📞 Atención telefónica</h6>
       <p><strong>Número central:</strong> +56 63 2 266400</p>
-      <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#cardICAValdivia">
+
+      <button class="btn btn-danger btn-sm mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#cardICAValdivia">
         ICA Valdivia: otros números disponibles
       </button>
 
-      
-      <div class="collapse mt-3" id="cardICAValdivia">
-        <div class="card border-primary">
+      <!-- Card ICA Valdivia -->
+      <div class="collapse" id="cardICAValdivia">
+        <div class="card border-primary mt-2">
           <div class="card-header bg-light">
             <strong>Tipos de atención de público ICA Valdivia</strong>
           </div>
@@ -94,70 +105,61 @@
               <li>O.J.V.</li>
             </ul>
             <div class="d-flex gap-2 mb-3">
-              <a href="tel:+56632266400" class="btn btn-primary btn-sm">📞 Llamar a mesa central +56 63 2266400</a>
-              <a href="tel:+56963639110" class="btn btn-primary btn-sm">📞 Llamar a mesa central +56 9 63639110</a>
+              <a href="tel:+56632266400" class="btn btn-primary btn-sm">📞 +56 63 2266400</a>
+              <a href="tel:+56963639110" class="btn btn-primary btn-sm">📞 +56 9 63639110</a>
             </div>
 
-            <h6 class="fw-bold">Atención por plataforma Zoom</h6>
-            <p class="mb-1 fw-semibold">Atención de abogados:</p>
+            <h6 class="fw-bold">Atención por Zoom</h6>
+            <p class="fw-semibold">Abogados:</p>
             <ul>
               <li>Funcionamiento de Sala Virtual</li>
-              <li>Tiempo de tramitación de causas</li>
+              <li>Tiempo de tramitación</li>
               <li>Coordinación de alegatos</li>
             </ul>
 
-            <p class="mb-1 fw-semibold">Atención de usuarios:</p>
+            <p class="fw-semibold">Usuarios:</p>
             <ul>
               <li>Estados de sus causas</li>
               <li>Nombramientos</li>
-              <li>Proceso de entrega de cheques</li>
-              <li>Correos para presentar recursos</li>
+              <li>Entrega de cheques</li>
+              <li>Presentación de recursos</li>
               <li>O.J.V.</li>
             </ul>
-            <a href="#" class="btn btn-primary btn-sm">▶ Atención de público virtual (Zoom)</a>
+            <a href="#" class="btn btn-primary btn-sm">▶ Público virtual (Zoom)</a>
 
             <h6 class="fw-bold mt-3">Secretario</h6>
             <ul>
-              <li>Autorización de patrocinio y poder (hasta las 16:00 hrs)</li>
-              <li>Causas agregadas penales 149 del Código Procesal Penal</li>
+              <li>Autorización de patrocinio y poder</li>
+              <li>Causas penales art. 149</li>
               <li>Amparos</li>
             </ul>
             <div class="d-flex gap-2">
-              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">📲 Atención vía WhatsApp</a>
-              <a href="tel:+56977061446" class="btn btn-primary btn-sm">📞 Llamado +569 77061446</a>
+              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">📲 WhatsApp</a>
+              <a href="tel:+56977061446" class="btn btn-primary btn-sm">📞 +569 77061446</a>
             </div>
           </div>
         </div>
       </div>
 
-      
       <h6 class="text-info mt-4">📬 Atención vía correo electrónico</h6>
-
       <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
         ✉️ ca_valdivia@pjud.cl
       </a>
-      <p><em>(Recepción de solicitudes o presentaciones no relacionadas con causas o recursos para tramitar, en tramitación o que ya fueron fallados.)</em></p>
+      <p><em>Solicitudes no relacionadas con causas</em></p>
 
       <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
         ✉️ admcausas_ca_valdivia@pjud.cl
       </a>
-      <p><em>(Recepción de solicitudes o presentaciones relacionadas con causas o recursos para tramitar, en tramitación o que ya fueron fallados.)</em></p>
+      <p><em>Solicitudes relacionadas con causas</em></p>
 
       <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
         ✉️ presidencia_cavaldivia@pjud.cl
       </a>
-      <p><em>(Solicitudes de audiencia con el Sr. Presidente de la ILTMA. Corte de Apelaciones. En la solicitud se deberá adjuntar los datos del solicitante y/o representante, materia a tratar, día y hora propuesta y un número de contacto.)</em></p>
+      <p><em>Audiencia con el Presidente de la Corte</em></p>
 
-      <hr>
       <h6 class="text-warning mt-3">🏛️ Atención presencial</h6>
-      <p><strong>Horario:</strong><br>
-        Lunes a viernes: 08:00 - 14:00 hrs<br>
-        Sábado: 09:00 - 13:00 hrs
-      </p>
-      <p><strong>Ubicación:</strong><br>
-        Yungay 693, Valdivia, Los Ríos
-      </p>
-
+      <p><strong>Horario:</strong><br>Lun a vie: 08:00 - 14:00<br>Sáb: 09:00 - 13:00</p>
+      <p><strong>Ubicación:</strong><br>Yungay 693, Valdivia, Los Ríos</p>
       <div style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.579179336855!2d-73.24394198468399!3d-39.8170889794419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961636f10da693a9%3A0x87cb50b2046cfa16!2sCorte%20de%20Apelaciones%20de%20Valdivia!5e0!3m2!1ses-419!2scl!4v1720700000000"
@@ -168,7 +170,6 @@
     </div>
   </div>
 </div>
-
 
 
 <footer class="py-5 container">
