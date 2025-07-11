@@ -1,5 +1,5 @@
 
-// Toggle navbar background on scroll
+
 window.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
   const toggleBg = () => {
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/*card*/
+
 
 let expandido = false;
 

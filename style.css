@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
 .card-responsive {
   width: 100%;
 }
@@ -7,7 +13,7 @@
   }
 }
 
-/*card*/
+
 .card-resumen {
   max-height: 140px;
   overflow: hidden;
@@ -28,8 +34,12 @@ margin-top: 10px;
   transition: 0.3s ease;
 }
 
+.carousel-item img {
+  height: 1000px;
+  object-fit: cover;
+}
 
-/*carrusel*/
+
 #carouselExampleSlidesOnly {
   position: relative;
 }
@@ -47,15 +57,9 @@ margin-top: 10px;
 }
 
 .welcome-text .content {
-  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   text-align: center;
-  font-size: 1.25rem;
-}
-
-.carousel-item img {
-  height: 1000px;
-  object-fit: cover;
+  font-size: 5rem;
 }
