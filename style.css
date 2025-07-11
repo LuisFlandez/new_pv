@@ -27,3 +27,35 @@ margin-top: 10px;
   transform: scale(1.1);
   transition: 0.3s ease;
 }
+
+
+/*carrusel*/
+#carouselExampleSlidesOnly {
+  position: relative;
+}
+
+#carouselExampleSlidesOnly .carousel-item img {
+  filter: brightness(50%);
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.welcome-text .content {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.carousel-item img {
+  height: 1000px;
+  object-fit: cover;
+}
