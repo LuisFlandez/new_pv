@@ -4,11 +4,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
   const toggleBg = () => {
     if (window.scrollY > 1) {
-      nav.classList.add('bg-dark');
-      nav.classList.remove('bg-transparent');
+      nav.classList.add('bg-white', 'navbar-light');
+      nav.classList.remove('bg-transparent', 'navbar-dark');
     } else {
-      nav.classList.add('bg-transparent');
-      nav.classList.remove('bg-ligth');
+      nav.classList.add('bg-transparent', 'navbar-dark');
+      nav.classList.remove('bg-white', 'navbar-light');
     }
   };
 
