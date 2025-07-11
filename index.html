@@ -64,263 +64,215 @@
 
 <div class="container mt-4">
   <div class="row g-4">
-
-   <!--Atención-->
+<!--Atención-->
     <div class="col-md-4">
-     <div class="card border-light shadow-sm" style="max-width: 500px;">
-  <div class="card-body text-center">
-    <h5 class="card-title fw-bold">Atención de público</h5>
-    
-    <div class="d-flex align-items-center justify-content-center mb-3">
-      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Icono atención" width="80" class="me-3">
-      <ul class="list-unstyled text-start mb-0">
-        <li>- Atención virtual</li>
-        <li>- Números de contacto</li>
-        <li>- Presentación de recursos</li>
-        <li>y más...</li>
-      </ul>
-    </div>
-
-    <button class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#contenidoPrincipal">
-      Entrar
-    </button>
-
-    
-    <div class="collapse mt-4 text-start" id="contenidoPrincipal">
-
-      <h6 class="text-success">📞 Atención telefónica</h6>
-      <p><strong>Número central:</strong> +56 63 2 266400</p>
-
-      <button class="btn btn-danger btn-sm mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#cardICAValdivia">
-        ICA Valdivia: otros números disponibles
-      </button>
-
-      
-      <div class="collapse" id="cardICAValdivia">
-        <div class="card border-primary mt-2">
-          <div class="card-header bg-light">
-            <strong>Tipos de atención de público ICA Valdivia</strong>
+      <div class="card border-light shadow-sm text-center">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Atención de público</h5>
+          <div class="d-flex align-items-center justify-content-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Icono atención" width="80" class="me-3">
+            <ul class="list-unstyled text-start mb-0">
+              <li>- Atención virtual</li>
+              <li>- Números de contacto</li>
+              <li>- Presentación de recursos</li>
+              <li>y más...</li>
+            </ul>
           </div>
-          <div class="card-body">
-            <h6 class="fw-bold">Central telefónica</h6>
-            <ul>
-              <li>Estados de sus causas</li>
-              <li>Nombramientos</li>
-              <li>Proceso de entrega de cheques</li>
-              <li>Correos para presentar recursos</li>
-              <li>O.J.V.</li>
-            </ul>
-            <div class="d-flex gap-2 mb-3">
-              <a href="tel:+56632266400" class="btn btn-primary btn-sm">📞 +56 63 2266400</a>
-              <a href="tel:+56963639110" class="btn btn-primary btn-sm">📞 +56 9 63639110</a>
+          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalAtencion">Entrar</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal fade" id="modalAtencion" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Atención de público</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-start">
+            <h6 class="text-success">📞 Atención telefónica</h6>
+            <p><strong>Número central:</strong> +56 63 2 266400</p>
+            <button class="btn btn-danger btn-sm mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#cardICAValdivia">ICA Valdivia: otros números disponibles</button>
+            <div class="collapse" id="cardICAValdivia">
+              <div class="card border-primary mt-2">
+                <div class="card-header bg-light"><strong>Tipos de atención de público ICA Valdivia</strong></div>
+                <div class="card-body">
+                  <h6 class="fw-bold">Central telefónica</h6>
+                  <ul>
+                    <li>Estados de sus causas</li>
+                    <li>Nombramientos</li>
+                    <li>Proceso de entrega de cheques</li>
+                    <li>Correos para presentar recursos</li>
+                    <li>O.J.V.</li>
+                  </ul>
+                  <div class="d-flex gap-2 mb-3">
+                    <a href="tel:+56632266400" class="btn btn-primary btn-sm">📞 +56 63 2266400</a>
+                    <a href="tel:+56963639110" class="btn btn-primary btn-sm">📞 +56 9 63639110</a>
+                  </div>
+                  <h6 class="fw-bold">Atención por Zoom</h6>
+                  <p class="fw-semibold">Abogados:</p>
+                  <ul>
+                    <li>Funcionamiento de Sala Virtual</li>
+                    <li>Tiempo de tramitación</li>
+                    <li>Coordinación de alegatos</li>
+                  </ul>
+                  <p class="fw-semibold">Usuarios:</p>
+                  <ul>
+                    <li>Estados de sus causas</li>
+                    <li>Nombramientos</li>
+                    <li>Entrega de cheques</li>
+                    <li>Presentación de recursos</li>
+                    <li>O.J.V.</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary btn-sm">▶ Público virtual (Zoom)</a>
+                  <h6 class="fw-bold mt-3">Secretario</h6>
+                  <ul>
+                    <li>Autorización de patrocinio y poder</li>
+                    <li>Causas penales art. 149</li>
+                    <li>Amparos</li>
+                  </ul>
+                  <div class="d-flex gap-2">
+                    <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">📲 WhatsApp</a>
+                    <a href="tel:+56977061446" class="btn btn-primary btn-sm">📞 +569 77061446</a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <h6 class="fw-bold">Atención por Zoom</h6>
-            <p class="fw-semibold">Abogados:</p>
-            <ul>
-              <li>Funcionamiento de Sala Virtual</li>
-              <li>Tiempo de tramitación</li>
-              <li>Coordinación de alegatos</li>
-            </ul>
-
-            <p class="fw-semibold">Usuarios:</p>
-            <ul>
-              <li>Estados de sus causas</li>
-              <li>Nombramientos</li>
-              <li>Entrega de cheques</li>
-              <li>Presentación de recursos</li>
-              <li>O.J.V.</li>
-            </ul>
-            <a href="#" class="btn btn-primary btn-sm">▶ Público virtual (Zoom)</a>
-
-            <h6 class="fw-bold mt-3">Secretario</h6>
-            <ul>
-              <li>Autorización de patrocinio y poder</li>
-              <li>Causas penales art. 149</li>
-              <li>Amparos</li>
-            </ul>
-            <div class="d-flex gap-2">
-              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">📲 WhatsApp</a>
-              <a href="tel:+56977061446" class="btn btn-primary btn-sm">📞 +569 77061446</a>
+            <h6 class="text-info mt-4">📬 Atención vía correo electrónico</h6>
+            <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️ ca_valdivia@pjud.cl</a>
+            <p><em>Solicitudes no relacionadas con causas</em></p>
+            <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️ admcausas_ca_valdivia@pjud.cl</a>
+            <p><em>Solicitudes relacionadas con causas</em></p>
+            <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️ presidencia_cavaldivia@pjud.cl</a>
+            <p><em>Audiencia con el Presidente de la Corte</em></p>
+            <h6 class="text-warning mt-3">🏛️ Atención presencial</h6>
+            <p><strong>Horario:</strong><br>Lun a vie: 08:00 - 14:00<br>Sáb: 09:00 - 13:00</p>
+            <p><strong>Ubicación:</strong><br>Yungay 693, Valdivia, Los Ríos</p>
+            <div style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.579179336855!2d-73.24394198468399!3d-39.8170889794419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961636f10da693a9%3A0x87cb50b2046cfa16!2sCorte%20de%20Apelaciones%20de%20Valdivia!5e0!3m2!1ses-419!2scl!4v1720700000000" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
       </div>
-
-      <h6 class="text-info mt-4">📬 Atención vía correo electrónico</h6>
-      <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
-        ✉️ ca_valdivia@pjud.cl
-      </a>
-      <p><em>Solicitudes no relacionadas con causas</em></p>
-
-      <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
-        ✉️ admcausas_ca_valdivia@pjud.cl
-      </a>
-      <p><em>Solicitudes relacionadas con causas</em></p>
-
-      <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">
-        ✉️ presidencia_cavaldivia@pjud.cl
-      </a>
-      <p><em>Audiencia con el Presidente de la Corte</em></p>
-
-      <h6 class="text-warning mt-3">🏛️ Atención presencial</h6>
-      <p><strong>Horario:</strong><br>Lun a vie: 08:00 - 14:00<br>Sáb: 09:00 - 13:00</p>
-      <p><strong>Ubicación:</strong><br>Yungay 693, Valdivia, Los Ríos</p>
-      <div style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.579179336855!2d-73.24394198468399!3d-39.8170889794419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961636f10da693a9%3A0x87cb50b2046cfa16!2sCorte%20de%20Apelaciones%20de%20Valdivia!5e0!3m2!1ses-419!2scl!4v1720700000000"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
     </div>
-  </div>
-</div>
-    </div>
-
-   <!--Secretaría-->
+   
+<!-- Secretaría -->
     <div class="col-md-4">
-      <div class="card border-light shadow-sm" style="max-width: 600px;">
-  <div class="card-body text-center">
-    <h5 class="card-title fw-bold">Secretaría</h5>
-
-    <div class="d-flex align-items-center justify-content-center mb-3">
-      <img src="https://cdn-icons-png.flaticon.com/512/2593/2593260.png" alt="icono secretaría" width="80" class="me-3">
-      <ul class="list-unstyled text-start mb-0">
-        <li>- Autorización de patrocinio y poder</li>
-        <li>- Certificado de Queja</li>
-        <li>- Requerimiento de inaplicabilidad al<br>&nbsp;&nbsp;&nbsp;Tribunal Constitucional</li>
-      </ul>
-    </div>
-
-    <button class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#contenidoSecretaria">
-      Entrar
-    </button>
-
-    
-    <div class="collapse mt-4 text-start" id="contenidoSecretaria">
-
-     
-      <div class="card mb-3">
+      <div class="card border-light shadow-sm text-center">
         <div class="card-body">
-          <h6><i class="fas fa-pen me-1"></i> <strong>Autorización de patrocinio y poder.</strong></h6>
-          <p>Para realizar la autorización debe realizar una videollamada al siguiente número:</p>
-          <a href="https://wa.me/56977061446" class="btn btn-success mb-2">📲 Atención a través de Whatsapp +56 9 77061446</a>
-          <p>Previa coordinación con este mismo número. Las partes deben presentar cédula de identidad.</p>
-          <p><strong>Horarios:</strong><br>Lunes a Viernes de 10:30 a 13:30 horas</p>
+          <h5 class="card-title fw-bold">Secretaría</h5>
+          <div class="d-flex align-items-center justify-content-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/2593/2593260.png" alt="Icono secretaría" width="80" class="me-3">
+            <ul class="list-unstyled text-start mb-0">
+              <li>- Autorización de patrocinio y poder</li>
+              <li>- Certificado de Queja</li>
+              <li>- Requerimiento de inaplicabilidad al<br>&nbsp;&nbsp;&nbsp;Tribunal Constitucional</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalSecretaria">Entrar</button>
         </div>
       </div>
-
-      
-      <div class="card mb-3">
-        <div class="card-body">
-          <h6><i class="fas fa-pen me-1"></i> <strong>Solicitar Certificado de Queja</strong></h6>
-          <ol class="mb-1">
-            <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
-            <li>
-              Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a 
-              <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la causa.
-            </li>
-            <li>
-              Vía WhatsApp al número 
-              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9 77061446</a>,
-              indicando nombre del solicitante y rol de la causa. <br>
-              <em>Horario: Lunes a viernes de 08:00 a 14:00 hrs</em>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      
-      <div class="card">
-        <div class="card-body">
-          <h6><i class="fas fa-pen me-1"></i> <strong>Solicitar Certificado para requerimiento de inaplicabilidad al Tribunal Constitucional</strong></h6>
-          <ol class="mb-1">
-            <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
-            <li>
-              Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a 
-              <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la causa.
-            </li>
-            <li>
-              Vía WhatsApp al número 
-              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9 77061446</a>,
-              indicando nombre del solicitante y rol de la causa. <br>
-              <em>Horario: Lunes a viernes de 08:00 a 14:00 hrs</em>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
     </div>
 
-  <!--Postulantes-->  
+    <div class="modal fade" id="modalSecretaria" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Secretaría</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h6><i class="fas fa-pen me-1"></i><strong> Autorización de patrocinio y poder.</strong></h6>
+                <p>Para realizar la autorización debe realizar una videollamada al siguiente número:</p>
+                <a href="https://wa.me/56977061446" class="btn btn-success mb-2">📲 Atención a través de Whatsapp +56 9 77061446</a>
+                <p>Previa coordinación con este mismo número. Las partes deben presentar cédula de identidad.</p>
+                <p><strong>Horarios:</strong><br>Lunes a Viernes de 10:30 a 13:30 horas</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h6><i class="fas fa-pen me-1"></i><strong> Solicitar Certificado de Queja</strong></h6>
+                <ol class="mb-1">
+                  <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
+                  <li>Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la causa.</li>
+                  <li>Vía WhatsApp al número <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9 77061446</a>, indicando nombre del solicitante y rol de la causa.<br><em>Horario: Lunes a viernes de 08:00 a 14:00 hrs</em></li>
+                </ol>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6><i class="fas fa-pen me-1"></i><strong> Solicitar Certificado para requerimiento de inaplicabilidad al Tribunal Constitucional</strong></h6>
+                <ol class="mb-1">
+                  <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
+                  <li>Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la causa.</li>
+                  <li>Vía WhatsApp al número <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9 77061446</a>, indicando nombre del solicitante y rol de la causa.<br><em>Horario: Lunes a viernes de 08:00 a 14:00 hrs</em></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Postulantes -->
     <div class="col-md-4">
-    <div class="card border-light shadow-sm" style="max-width: 600px;">
-  <div class="card-body text-center">
-    <h5 class="card-title fw-bold">Atención postulantes</h5>
-
-    <div class="d-flex align-items-center justify-content-center mb-3">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono certificado" width="80" class="me-3">
-      <ul class="list-unstyled text-start mb-0">
-        <li>- Procedimiento para abrir expediente</li>
-        <li>- Escucha de alegatos</li>
-        <li>- Preguntas frecuentes</li>
-        <li>y más...</li>
-      </ul>
-    </div>
-
-    <button class="btn btn-outline-info" data-bs-toggle="collapse" data-bs-target="#contenidoPostulantes">
-      Entrar
-    </button>
-
-    
-    <div class="collapse mt-4 text-start" id="contenidoPostulantes">
-      
-      <div class="card mb-3">
+      <div class="card border-light shadow-sm text-center">
         <div class="card-body">
-          <h6><i class="fas fa-folder-open me-1"></i> <strong>Procedimiento para abrir expediente</strong></h6>
-          <p>Para abrir un expediente como postulante debe presentar solicitud formal en la Oficina Judicial Virtual (<a href="#">OJV</a>) y coordinar con Secretaría Técnica.</p>
-          <p>Documentación requerida: carta de presentación, antecedentes académicos y formulario de postulación.</p>
-        </div>
-      </div>
-
-      
-      <div class="card mb-3">
-        <div class="card-body">
-          <h6><i class="fas fa-headphones me-1"></i> <strong>Escucha de alegatos</strong></h6>
-          <p>Los postulantes pueden participar como oyentes en audiencias de alegatos previa inscripción.</p>
-          <p>Coordinar asistencia con correo a: <a href="mailto:secretaria@pjud.cl">secretaria@pjud.cl</a>.</p>
-        </div>
-      </div>
-
-      
-      <div class="card">
-        <div class="card-body">
-          <h6><i class="fas fa-question-circle me-1"></i> <strong>Preguntas frecuentes</strong></h6>
-          <ul>
-            <li>¿Qué documentos debo presentar como postulante?</li>
-            <li>¿Dónde se realizan las prácticas?</li>
-            <li>¿Puedo elegir el área de apoyo?</li>
-          </ul>
-          <p>Para más información escribe a: <a href="mailto:contacto@pjud.cl">contacto@pjud.cl</a></p>
+          <h5 class="card-title fw-bold">Atención postulantes</h5>
+          <div class="d-flex align-items-center justify-content-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono certificado" width="80" class="me-3">
+            <ul class="list-unstyled text-start mb-0">
+              <li>- Procedimiento para abrir expediente</li>
+              <li>- Escucha de alegatos</li>
+              <li>- Preguntas frecuentes</li>
+              <li>y más...</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalPostulantes">Entrar</button>
         </div>
       </div>
     </div>
-  </div>
-</div>
-    </div>
 
-    <!-- Card 5 -->
-    <div class="col-md-4">
-      <!-- Diario Mural -->
-    </div>
-
-    <!-- Card 6 -->
-    <div class="col-md-4">
-      <!-- Interponer recurso -->
+    <div class="modal fade" id="modalPostulantes" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Atención postulantes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-start">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h6><i class="fas fa-folder-open me-1"></i><strong> Procedimiento para abrir expediente</strong></h6>
+                <p>Para abrir un expediente como postulante debe presentar solicitud formal en la Oficina Judicial Virtual (<a href="#">OJV</a>) y coordinar con Secretaría Técnica.</p>
+                <p>Documentación requerida: carta de presentación, antecedentes académicos y formulario de postulación.</p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h6><i class="fas fa-headphones me-1"></i><strong> Escucha de alegatos</strong></h6>
+                <p>Los postulantes pueden participar como oyentes en audiencias de alegatos previa inscripción.</p>
+                <p>Coordinar asistencia con correo a: <a href="mailto:secretaria@pjud.cl">secretaria@pjud.cl</a>.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6><i class="fas fa-question-circle me-1"></i><strong> Preguntas frecuentes</strong></h6>
+                <ul>
+                  <li>¿Qué documentos debo presentar como postulante?</li>
+                  <li>¿Dónde se realizan las prácticas?</li>
+                  <li>¿Puedo elegir el área de apoyo?</li>
+                </ul>
+                <p>Para más información escribe a: <a href="mailto:contacto@pjud.cl">contacto@pjud.cl</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
