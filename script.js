@@ -30,3 +30,27 @@ window.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll);
 });
+
+
+/*card*/
+
+let expandido = false;
+
+function toggleCard() {
+  const contenido = document.getElementById('contenidoExtendido');
+  const card = document.getElementById('contenidoCard');
+  const btn = event.target;
+
+  if (!expandido) {
+    contenido.style.display = 'block';
+    card.classList.add('card-expandida');
+    btn.innerText = 'Ver menos';
+    expandido = true;
+  } else {
+    contenido.style.display = 'none';
+    card.classList.remove('card-expandida');
+    btn.innerText = 'Ver más';
+    expandido = false;
+  }
+}
+
