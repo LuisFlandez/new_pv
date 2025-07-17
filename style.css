@@ -35,7 +35,8 @@ margin-top: 10px;
 }
 
 .carousel-item img {
-  height: 1000px;
+  height: 100vh;
+  min-height: 300px;
   object-fit: cover;
 }
 
@@ -61,5 +62,5 @@ margin-top: 10px;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 6vw, 4rem);
 }
