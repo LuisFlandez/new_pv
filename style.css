@@ -40,6 +40,10 @@ margin-top: 10px;
   object-fit: cover;
 }
 
+#carouselPostulantes .carousel-item img {
+  height: 400vh;
+  min-height: 150px;
+}
 
 #carouselExampleSlidesOnly {
   position: relative;
