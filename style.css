@@ -45,6 +45,12 @@ margin-top: 10px;
   min-height: 150px;
 }
 
+#accordionPostulantes {
+  height: 25vh;
+  overflow-y: auto;
+}
+
+
 #carouselExampleSlidesOnly {
   position: relative;
 }
