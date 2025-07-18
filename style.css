@@ -46,8 +46,8 @@ margin-top: 10px;
 }
 
 #accordionPostulantes {
-  height: 25vh;
-  overflow-y: auto;
+  height: auto;
+  overflow-y: visible;
 }
 
 
