@@ -74,3 +74,14 @@ margin-top: 10px;
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 4rem);
 }
+
+/* Estilos para la encuesta de satisfacción */
+.star-rating i {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating i.selected {
+  color: #ffc107;
+}

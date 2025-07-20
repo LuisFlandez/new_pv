@@ -54,3 +54,37 @@ function toggleCard() {
   }
 }
 
+// Encuesta de satisfacción
+document.addEventListener('DOMContentLoaded', () => {
+  const stars = document.querySelectorAll('#starRating i');
+  const ratingInput = document.getElementById('ratingInput');
+  const form = document.getElementById('surveyForm');
+  let currentRating = 0;
+
+  const setRating = (rating) => {
+    currentRating = rating;
+    ratingInput.value = rating;
+    stars.forEach((star, idx) => {
+      star.classList.toggle('fa-solid', idx < rating);
+      star.classList.toggle('fa-regular', idx >= rating);
+      star.classList.toggle('selected', idx < rating);
+    });
+  };
+
+  stars.forEach((star, idx) => {
+    star.addEventListener('mouseenter', () => setRating(idx + 1));
+    star.addEventListener('click', () => setRating(idx + 1));
+  });
+
+  const starContainer = document.getElementById('starRating');
+  if (starContainer) {
+    starContainer.addEventListener('mouseleave', () => setRating(currentRating));
+  }
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.innerHTML = '<div class="alert alert-success" role="alert">\u00a1Gracias por compartir tu opini\u00f3n!</div>';
+    });
+  }
+});

@@ -994,14 +994,45 @@
                                     </ol>
                                   </div>
                                 </div>
-                              </div>
-
-                            </div> 
+                              </div>  
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+              
+              <div class="modal fade" id="modalBuzon" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Buzón</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="surveyForm">
+                        <div class="mb-3 text-center">
+                          <p class="mb-2">&#191;Qué tan satisfecho(a) estás con la página?</p>
+                          <div id="starRating" class="star-rating mb-2">
+                            <i class="fa-regular fa-star" data-value="1"></i>
+                            <i class="fa-regular fa-star" data-value="2"></i>
+                            <i class="fa-regular fa-star" data-value="3"></i>
+                            <i class="fa-regular fa-star" data-value="4"></i>
+                            <i class="fa-regular fa-star" data-value="5"></i>
+                          </div>
+                          <input type="hidden" id="ratingInput" name="rating" value="0">
+                        </div>
+                        <div class="mb-3">
+                          <label for="comment" class="form-label">Comentarios</label>
+                          <textarea class="form-control" id="comment" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
     
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
