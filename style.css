@@ -76,12 +76,12 @@ margin-top: 10px;
 }
 
 /* Estilos para la encuesta de satisfacción */
-.star-rating i {
+.star-rating .bi {
   font-size: 1.8rem;
   color: #ccc;
   cursor: pointer;
 }
 
-.star-rating i.selected {
+.star-rating .bi.selected {
   color: #ffc107;
 }

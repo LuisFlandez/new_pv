@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
     currentRating = rating;
     ratingInput.value = rating;
     stars.forEach((star, idx) => {
-      star.classList.toggle('fa-solid', idx < rating);
-      star.classList.toggle('fa-regular', idx >= rating);
+      star.classList.toggle('bi-star-fill', idx < rating);
+      star.classList.toggle('bi-star', idx >= rating);
       star.classList.toggle('selected', idx < rating);
     });
   };
