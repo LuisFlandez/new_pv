@@ -29,16 +29,6 @@
         <li class="nav-item">
           <a class="nav-link active" href="nosotros.html">Sobre Nosotros</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Varios
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="audiencia.html">Sala de audiencia</a></li>
-            
-          </ul>
-        </li>
-
       </ul>
     </div>
 
@@ -61,125 +51,169 @@
       <div class="content">Bienvenido al Portal del Poder Judicial</div>
     </div>
   </div>
-
-  <div class="container mt-4">
-    <div class="row g-4">
-      <!--Atención de público-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
+  
+    <div class="container mt-4 text-center">
+      <div class="card rounded-0 border-0 shadow">
         <div class="card-body">
-          <h5 class="card-title fw-bold">Atención de público</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Icono atención" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Atención virtual</li>
-              <li>- Números de contacto</li>
-              <li>- Presentación de recursos</li>
-              <li>y más...</li>
-            </ul>
-          </div>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalAtencion">Entrar</button>
+            <div class="row">
+        
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="salas_audiencias">Salas de audiencia</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="atencion_publico">Atención publico</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="secretaria">Secretaría</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="atencion_postulantes">Atención Postulantes</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="diario_mural">Diario Mural</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="interponer_recurso">Interponer Recurso</button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 rounded-1 info" data-tab="buzon">Buzón</button>
+              </div>
+            </div>
+
+
+            <div class="mt-3 py-4 tab-info" id="salas_audiencias">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Suprema.jpg" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Column</div>
+                    <div class="col border-bottom">Column</div>
+                    <div class="col border-end">Column</div>
+                    <div class="col">Column</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 py-4 d-none tab-info" id="atencion_publico">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Atención telefónica:</div>
+                    <div class="col border-bottom">Tipos de atención vía correo electrónico:</div>
+                    <div class="col border-end">Número central: 63 2 266400</div>
+                    <div class="col">Column</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="mt-3 py-4 d-none tab-info" id="secretaria">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom bi bi-pencil-square"> Autorización de patrocinio y poder.</div>
+                    <div class="col border-bottom bi bi-pencil-square"> Solicitar Certificado de queja</div>
+                    <div class="col border-end bi bi-pencil-square"> Solicitar Certificado para requerimiento de inaplicabilidad al Tribunal Constitucional</div>
+                    <div class="col">Column</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mt-3 py-4 d-none tab-info" id="atencion_postulantes">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Nomina de Postulantes e instrucciones para oír alegatos</div>
+                    <div class="col border-bottom">Indicaciones para la redacción del documento "Certidicado de Alegatos"</div>
+                    <div class="col border-end">Procedimiento para abrir expediente de título</div>
+                    <div class="col">Preguntas Frecuentes</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="mt-3 py-4 d-none tab-info" id="diario_mural">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Edictos</div>
+                    <div class="col border-bottom">Reajusta de Cuantías</div>
+                    <div class="col border-end">Acuerdos de Pleno</div>
+                    <div class="col">Redes sociales PJUD</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mt-3 py-4 d-none tab-info" id="interponer_recurso">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Soy Abogado</div>
+                    <div class="col border-bottom">Column</div>
+                    <div class="col border-end">Se advierte que el ingreso de demandas, escritos y documentos recibidos por correo electrónico para causas ingresadas a contar del día 18 de junio de 2016, se deberá realizar en la oficina judicial (oficinajudicialvirtual.pjud.cl) de acuerdo a lo señalado en los artículos 5° y 6° de la Ley N°20.886 y artículo 3° del Acta 37-2016, se prescindirá la presentación del correo electrónico al tribunal con el fin de evitar la doble tramitación .Por lo que estos deberá ingresar únicamente por la Oficina Judicial Virtual (OJV).</div>
+                    <div class="col">Column</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mt-3 py-4 d-none tab-info" id="buzon">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <div class="row row-cols-2 border rounded-3">
+                    <div class="col border-end border-bottom">Column</div>
+                    <div class="col border-bottom">Column</div>
+                    <div class="col border-end">Column</div>
+                    <div class="col">test</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
         </div>
       </div>
+
+
     </div>
-
-    <!--Secretaría-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Secretaría</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="img/secre.png" alt="Icono secretaría" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Autorización de patrocinio y poder</li>
-              <li>- Certificado de Queja</li>
-              <li>- Requerimiento de inaplicabilidad al<br>&nbsp;&nbsp;&nbsp;Tribunal Constitucional</li>
-            </ul>
-          </div>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalSecretaria">Entrar</button>
-        </div>
-      </div>
-    </div>
-
-    <!--postulantes-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Atención postulantes</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Icono certificado" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Procedimiento para abrir expediente</li>
-              <li>- Escucha de alegatos</li>
-              <li>- Preguntas frecuentes</li>
-              <li>y más...</li>
-            </ul>
-          </div>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalPostulantes">Entrar</button>
-        </div>
-      </div>
-    </div>
-
-    <!--Mural-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Diario Mural</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="https://cdn-icons-png.flaticon.com/512/786/786432.png" alt="Icono Diario Mural" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Información de importancia</li>
-              <li>- Publicaciones</li>
-              <li>- Edictos</li>
-            </ul>
-          </div>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalDiarioMural">Entrar</button>
-        </div>
-      </div>
-    </div>
-
-    <!--Recurso-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Interponer Recurso</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="img/recurso.webp" alt="Icono recurso" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Modalidades de presentación del recurso</li>
-              <li>- Recurso de Protección</li>
-              <li>- Recurso de Amparo</li>
-            </ul>
-          </div>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modalrecurso">Entrar</button>
-        </div>
-      </div>
-    </div>
-
-    <!--Buzón-->
-    <div class="col-md-4">
-      <div class="card border-light shadow-sm text-center">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Buzón</h5>
-          <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="img/buzon.png" alt="Icono buzón" width="80" class="me-3">
-            <ul class="list-unstyled text-start mb-0">
-              <li>- Reclamos</li>
-              <li>- Sugerencias</li>
-              <li>- Felicitaciones</li>
-            </ul>
-          </div>
-          <a class="btn btn-outline-info" href="https://buzon.pjud.cl/formulario" target="_blank">Entrar</a>
-        </div>
-      </div>
-    </div>
-  </div> 
-</div> 
+    
 
 
-
-    <!--Footer-->
-    <footer class="py-5 container">
+   <footer class="py-5 container">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
           <h5>Section</h5>
@@ -243,795 +277,6 @@
         </ul>
       </div>
     </footer>
-
-    <div class="modal fade" id="modalAtencion" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Atención de público</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body text-start">
-              <h6 class="text-success">📞 Atención telefónica</h6>
-              <p><strong>Número central:</strong> +56 63 2 266400</p>
-              <button class="btn btn-danger btn-sm mb-3" type="button" data-bs-toggle="collapse"
-                data-bs-target="#cardICAValdivia">ICA Valdivia: otros números disponibles</button>
-              <div class="collapse" id="cardICAValdivia">
-                <div class="card border-primary mt-2">
-                  <div class="card-header bg-light"><strong>Tipos de atención de público ICA Valdivia</strong></div>
-                  <div class="card-body">
-                    <h6 class="fw-bold">Central telefónica</h6>
-                    <ul>
-                      <li>Estados de sus causas</li>
-                      <li>Nombramientos</li>
-                      <li>Proceso de entrega de cheques</li>
-                      <li>Correos para presentar recursos</li>
-                      <li>O.J.V.</li>
-                    </ul>
-                    <div class="d-flex gap-2 mb-3">
-                      <a href="tel:+56632266400" class="btn btn-primary btn-sm">📞 +56 63 2266400</a>
-                      <a href="tel:+56963639110" class="btn btn-primary btn-sm">📞 +56 9 63639110</a>
-                    </div>
-                    <h6 class="fw-bold">Atención por Zoom</h6>
-                    <p class="fw-semibold">Abogados:</p>
-                    <ul>
-                      <li>Funcionamiento de Sala Virtual</li>
-                      <li>Tiempo de tramitación</li>
-                      <li>Coordinación de alegatos</li>
-                    </ul>
-                    <p class="fw-semibold">Usuarios:</p>
-                    <ul>
-                      <li>Estados de sus causas</li>
-                      <li>Nombramientos</li>
-                      <li>Entrega de cheques</li>
-                      <li>Presentación de recursos</li>
-                      <li>O.J.V.</li>
-                    </ul>
-                    <a href="https://zoom.us/j/99596962879#success" class="btn btn-primary btn-sm">▶ Público virtual
-                      (Zoom)</a>
-                    <h6 class="fw-bold mt-3">Secretario</h6>
-                    <ul>
-                      <li>Autorización de patrocinio y poder</li>
-                      <li>Causas penales art. 149</li>
-                      <li>Amparos</li>
-                    </ul>
-                    <div class="d-flex gap-2">
-                      <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">📲 WhatsApp</a>
-                      <a href="tel:+56977061446" class="btn btn-primary btn-sm">📞 +569 77061446</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h6 class="text-info mt-4">📬 Atención vía correo electrónico</h6>
-              <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️
-                ca_valdivia@pjud.cl</a>
-              <p><em>Solicitudes no relacionadas con causas</em></p>
-              <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️
-                admcausas_ca_valdivia@pjud.cl</a>
-              <p><em>Solicitudes relacionadas con causas</em></p>
-              <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-sm mb-2 text-white">✉️
-                presidencia_cavaldivia@pjud.cl</a>
-              <p><em>Audiencia con el Presidente de la Corte</em></p>
-              <h6 class="text mt-3">🏛️ <strong>Atención presencial</strong></h6>
-              <p><strong>Horario:</strong><br>Lun a vie: 08:00 - 14:00<br>Sáb: 09:00 - 13:00</p>
-              <p><strong>Ubicación:</strong><br>Yungay 693, Valdivia, Los Ríos</p>
-              <div style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.579179336855!2d-73.24394198468399!3d-39.8170889794419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961636f10da693a9%3A0x87cb50b2046cfa16!2sCorte%20de%20Apelaciones%20de%20Valdivia!5e0!3m2!1ses-419!2scl!4v1720700000000"
-                  width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalDiarioMural" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Diario Mural</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <div class="modal-body text-start">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="accordion" id="accordionMural">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEdictos">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdictos" aria-expanded="true">
-                            <i class="bi bi-info-circle"></i> Edictos
-                          </button>
-                        </h2>
-                        <div id="collapseEdictos" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body p-0">
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Edicto Apertura concurso Relator Titular
-                                <div>
-                                  Visible hasta: Miércoles 31 de Diciembre
-                                  <a href="docs/edic1.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                                </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Edicto apertura concurso Juez(a) Juzgado de Familia de Osorno
-                                <div>
-                                  Visible hasta: Miércoles 31 de Diciembre
-                                  <a href="docs/edic2.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                                </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Edicto apertura concurso Juez(a) Tribunal de Juicio Oral en lo Penal de Valdivia
-                                <div>
-                                  Visible hasta: Miércoles 31 de Diciembre
-                                  <a href="docs/edic3.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                                </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Edicto apertura concurso Procurador del Número de Osorno
-                                <div>
-                                  Visible hasta: Miércoles 31 de Diciembre
-                                  <a href="docs/edic4.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                                </div>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Apertura concurso de Juez(a) Juzgado de Garantía de Mariquina
-                                <div>
-                                  Visible hasta: Miércoles 31 de Diciembre
-                                  <a href="docs/edic5.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
- 
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cuantias">
-                            <i class="bi bi-cash-coin"></i> Reajuste de Cuantías
-                          </button>
-                        </h2>
-                        <div id="cuantias" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body">
-                            Acta N° 31-2025 sobre reajuste de cuantías<br>
-                            Visible hasta: Miércoles 31 de Diciembre
-                            <a href="docs/act1.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver Acta</a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acuerdos">
-                            <i class="bi bi-exclamation-circle"></i> Acuerdos de Pleno
-                          </button>
-                        </h2>
-                        <div id="acuerdos" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body">
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                Acuerdo de Pleno 146-2024 sobre la prórroga del funcionamiento excepcional Corte de Apelaciones de Valdivia por 1 año a contar de 1 de septiembre de 2023<br>
-                                Visible hasta: Lunes 01 de septiembre
-                                <a href="docs/ple1.pdf" class="btn btn-danger btn-sm ms-2"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                              </li>
-                              <li class="list-group-item">
-                                Acuerdo de Pleno N°176-2024 que autoriza el funcionamiento excepcional para tribunales indicados en la jurisdicción, previsto en el artículo 47 D del COT<br>
-                                Visible hasta: Viernes 26 de septiembre
-                                <a href="docs/ple2.pdf" class="btn btn-danger btn-sm ms-2"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                              </li>
-                              <li class="list-group-item">
-                                Prórroga por 1 año del funcionamiento excepcional para el Segundo Juzgado de Letras de Osorno, previsto en el artículo 47 D del COT / Rol Pleno 405-2023<br>
-                                Visible hasta: Domingo 30 de Noviembre
-                                <a href="docs/ple3.pdf" class="btn btn-danger btn-sm ms-2"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                              </li>
-                              <li class="list-group-item">
-                                Acuerdo Pleno 206-2024 autoriza la prórroga del funcionamiento excepcional del Tribunal de Juicio Oral en lo Penal de Valdivia, de conformidad al artículo 107 ter del COT<br>
-                                Visible hasta: Domingo 30 de Noviembre
-                                <a href="docs/ple4.pdf" class="btn btn-danger btn-sm ms-2"><i class="bi bi-file-pdf"></i> Ver edicto</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#redes">
-                            <i class="bi bi-share-fill"></i>  Redes sociales PJUD
-                          </button>
-                        </h2>
-                        <div id="redes" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body row text-center">
-                            <div class="col-sm-3 p-1">
-                              <a class="btn shadow btn-sm w-100 btn-info" href="https://x.com/PJudicialChile" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                            </div>
-                            <div class="col-sm-3 p-1">
-                              <a class="btn shadow btn-sm w-100 btn-primary" href="https://www.facebook.com/PoderJudicialdeChile" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
-                            </div>
-                            <div class="col-sm-3 p-1">
-                              <a class="btn shadow btn-sm w-100 btn-danger" href="https://www.youtube.com/user/pjudicialchile" target="_blank"><i class="bi bi-youtube"></i> Youtube</a>
-                            </div>
-                            <div class="col-sm-3 p-1">
-                              <a class="btn shadow btn-sm w-100 btn-danger" href="https://www.youtube.com/@corteapelacionesvaldivia7014" target="_blank"><i class="bi bi-youtube"></i> ICA Valdivia</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-
-                  <div class="col-9 d-flex flex-wrap gap-3 mt-3 justify-content-start">
-                    <div class="card" style="min-width: 300px;">
-                      <div class="card-body">
-                        <h6 class="fw-bold"><i class="bi bi-gavel"></i> Juzgados de Policía Local</h6>
-                        <p class="small">
-                          En Antecedente de Pleno Rol 185-2020, el Tribunal Pleno ordena la publicación en la página web de esta Corte de Apelaciones, los medios tecnológicos de los Juzgados de Policía Local de la jurisdicción, los que se valdrán para practicar las notificaciones electrónicas a que se refiere el artículo 18 de la Ley N° 18.287.
-                        </p>
-                        <div class="d-flex gap-2">
-                          <a href="docs/acuerdo_pleno.pdf" class="btn btn-danger btn-sm">
-                            <i class="bi bi-file-pdf"></i> Ver acuerdo
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="card" style="min-width: 300px;">
-                      <div class="card-body">
-                        <h6 class="fw-bold"><i class="bi bi-clock"></i> Horario de funcionamiento</h6>
-                        <p class="mb-1">Lunes a viernes: 09:00 a 14:00 y de 15:00 a 17:00 horas.</p>
-                        <p>Turno sábado: 10:00 a 12:30 horas.</p>
-                      </div>
-                    </div>
-  
-                    <div class="card" style="min-width: 300px;">
-                      <div class="card-body">
-                        <h6 class="fw-bold"><i class="bi bi-info-circle"></i> Información sobre notarias</h6>
-                        <div class="d-flex flex-wrap gap-2">
-                          <a href="docs/not_val.pdf" class="btn btn-danger btn-sm">
-                            <i class="bi bi-file-pdf"></i> Turno Notarias Valdivia
-                          </a>
-                          <a href="docs/not_oso.pdf" class="btn btn-danger btn-sm">
-                            <i class="bi bi-file-pdf"></i> Turno Notarias Osorno
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div> 
-            </div>
-          </div>
-    </div>
-    <div class="modal fade" id="modalPostulantes" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Atención postulantes</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-start">
-              <div class="row">
-
-
-                <div class="col-sm-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Registros Fotograficos juramentos licenciados/as</h5>
-                      <p class="card-text">
-                        Producto de la crisis sanitaria que vive el país, el máximo tribunal debió suspender los
-                        juramentos presenciales desde
-                        el 16 de marzo del 2020 (Acta 42), lo que generó que muchos de los postulantes -que estaban en
-                        condiciones de jurar- se vieran impedidos de hacerlo y por ende, comenzar a ejercer. En este
-                        escenario, el Pleno de la Corte Suprema decidió implementar un sistema de juramento online, que
-                        permitiera conjugar el distanciamiento social y el derecho de los postulantes a iniciar su vida
-                        laboral, aportando de paso a la descentralización de este poder del Estado.
-                      </p>
-                      <div id="carouselPostulantes" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="img/j_lic1.jpg" class="d-block w-100" alt="corte">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/j_lic2.jpg" class="d-block w-100" alt="apelaciones">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/j_lic3.jpg" class="d-block w-100" alt="suprema">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8 ">
-
-                  <div class="accordion" id="accordionPostulantes">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingNomina">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseNomina" aria-expanded="false" aria-controls="collapseNomina">
-                          <i class="fas fa-folder-open me-1"></i><strong> Nómina de postulantes e instrucciones para oír
-                            alegatos</strong>
-                        </button>
-                      </h2>
-                      <div id="collapseNomina" class="accordion-collapse collapse" aria-labelledby="headingNomina"
-                        data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body">
-                          <p><strong>INSTRUCCIONES: </strong></p>
-                          <ul>
-                            <li>Incorporarse a la sala de audiencia 5 minutos antes de las 9:00.</li>
-                            <li>Individualizados con su nombre y señalando su calidad de postulante.</li>
-                            <li>Ingresar a la audiencia desde un dispositivo electrónico y mantener cámara encendida.
-                            </li>
-                            <li>Ingresar sólo a la sala que se les ha indicado.</li>
-                          </ul>
-                          <strong class="text-danger">- IMPORTANTE</strong>
-                          es facultad de cada sala la admisión de cada postulante por tanto deberá esperar en línea.
-                          <br><br>
-                          <strong>NÓMINA DE POSTULANTES:</strong>
-                          <br>
-                          <a href="https://docs.google.com/spreadsheets/d/1Ok1wiL9FurgWvszsMjR4UYqdjkVycYHLEizOMj3L-PM/edit?gid=0#gid=0"
-                            target="_blank" class="btn btn-secondary">
-                            <i class="fa fa-aling-justify"></i>
-                            Ver nómina
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingCertificado">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseCertificado" aria-expanded="false"
-                          aria-controls="collapseCertificado">
-                          <i class="bi bi-file-earmark-bar-graph me-1"></i><strong> Indicaciones para la redacción del
-                            documento "Certificado de Alegatos"</strong>
-                        </button>
-                      </h2>
-                      <div id="collapseCertificado" class="accordion-collapse collapse"
-                        aria-labelledby="headingCertificado" data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body">
-                          <p class="card-text">
-                            Fuente:
-                            <em>Calibri</em>
-                            <br>
-                            Tamaño fuente:
-                            <em>11</em>
-                            <br>
-                            Interlineado:
-                            <em>1.5</em>
-                            <br>
-                            Texto:
-                            <em>justificado</em>
-                          </p>
-                          <h5 class="card-title mb-3">Ejemplo</h5>
-                          <p class="card-text">
-                            Causa rol:
-                            <em>123-2023 civil</em>
-                            <br>
-                            Relator:
-                            <em>Alejandro Clunes (sin abreviaturas)</em>
-                            <br>
-                            Caratulado:
-                            <em>Garcia / Jiménez (Tal como figura en la página del PJUD)</em>
-                            <br>
-                            Abogados:
-                            <em>Rodrigo González - Paula Salas (Indicar solo los abogados que comparecieron en la
-                              audiencia)</em>
-                            <br>
-                            Materia (Primera instancia):
-                            <em>Honorarios, cobro de (en juicio)</em>
-                            <br>
-                            Sala:
-                            <em>Primera</em>
-                          </p>
-                          <a href="doc/plantilla_postulante.doc" target="_blank" class="card-link">
-                            <i class="bi bi-file-earmark-text"></i>
-                            Descargar plantilla de Certificado de Alegatos (Word)
-                          </a>
-                          <p class="mt-3 card-text">
-                            Una vez escuchados todos los alegatos que le han sido indicados por la Corporación de
-                            Asistencia Judicial.
-                            Enviar el o los documentos en un solo correo electrónico (formato Word) a la dirección <a
-                              href="mailto:postulantes:cavaldivia@pjud.cl">postulantes_cavaldivia@pjud.cl</a>, indicando
-                            en el asunto del mismo "Certificación de alegatos".
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingExpediente">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseExpediente" aria-expanded="false" aria-controls="collapseExpediente">
-                          <i class="bi-info-circle me-1"></i><strong> Procedimiento para abrir expediente de
-                            título</strong>
-                        </button>
-                      </h2>
-                      <div id="collapseExpediente" class="accordion-collapse collapse"
-                        aria-labelledby="headingExpediente" data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body">
-                          <div class="col-3">
-                            <h6>Paso N°1</h6>
-                          </div>
-                          <div class="row">
-                            <div class="col-12">
-                              Enviar los documentos escaneados (copia del original) al correo
-                              <a href="mailto:titulos_cavaldivia@pjud.cl">titulos_cavaldivia@pjud.cl</a>
-                            </div>
-                          </div>
-                          <div class="row mt-3">
-                            <div class="col-1"></div>
-                            <div class="col-11">
-                              1.- Documentos entregados por institución universitaria correspondiente.<br>
-                              &nbsp;&nbsp; 1.1- Certificado de Licenciado de la Universidad<br>
-                              &nbsp;&nbsp; 1.2- Certificado de Conducta u Honorabilidad.<br>
-                              &nbsp;&nbsp; 1.3- Certificado de notas de la Universidad.<br><br>
-                              2.- Documentos en formato de Excelentísima Corte Suprema.<br>
-                              &nbsp;&nbsp; 2.1- Escrito Apertura de Expediente Formato de página PJUD.
-                              <a href="docs/Plantilla_apertura_expediente.docx">Descargar plantilla</a><br>
-                              &nbsp;&nbsp; 2.2- Formulario de Discapacidad.
-                              <a href="docs/f_discapacidad.doc">Descargar plantilla</a><br>
-                              &nbsp;&nbsp; 2.3- Formulario Colegio de Abogados.
-                              <a href="docs/f_colegio_abogados.docx">Descargar plantilla</a><br><br>
-                              3.- Otros Documentos requeridos.<br>
-                              &nbsp;&nbsp; 3.1- Certificado de Nacimiento.
-                              <a
-                                href="https://www.registrocivil.cl/principal/servicios-en-linea">https://www.registrocivil.cl/principal/servicios-en-linea</a><br>
-                              &nbsp;&nbsp; 3.2- Declaración Jurada de Testigos <i>(El formato puede variar según la
-                                notaría)</i>. Dicha declaración no puede tener antigüedad superior a 15 días. se debe
-                              presentar además copia simple (no
-                              notarial) de la cédulas de identidad del postulante y de los testigos, por ambos
-                              lados.<br>
-                              &nbsp;&nbsp; 3.3- Certificado de Práctica Profesional Aprobada <i>(El cual debe
-                                solicitarse en la Corporación de Asistencia Judicial respectiva).</i><br>
-                              &nbsp;&nbsp; 3.4- Copias simples de las Cédulas de Identidad del postulantes y los
-                              testigos.<br>
-                              &nbsp;&nbsp; 3.5- Foto Tamaño Carnet.<br><br>
-                              En caso de dudas respecto de los documentos: Revisar INSTRUCCIONES de la CORTE SUPREMA
-                              RELATIVAS A JURAMENTO DE ABOGADOS disponible en el siguiente link:
-                              <a href="https://www.pjud.cl/docs/download/2617">
-                                https://www.pjud.cl/docs/download/2617</a>
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-3">
-                              <h6>Paso N°2:</h6>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-11">
-                              Esperar el correo de confirmación, el cual señala si los documentos cumplen los
-                              requisitos.
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-3">
-                              <h6>Paso N°3:</h6>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-11">
-                              Dirigirse a las dependencias de la Corte de Apelaciones con los documentos originales en
-                              un sobre cerrado con los siguientes datos:
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2"></div>
-                            <div>
-                              - Nombre<br>
-                              - Número de teléfono<br>
-                              - Correo electrónico
-                            </div>
-                          </div>
-                          <hr>
-                          <h6>Pueden ver el estado del envío de su expediente en la siguiente URL:</h6>
-                          <a class="btn btn-success btn-sm btn-block"
-                            href="https://docs.google.com/spreadsheets/d/1VecAm2CQYkznx3tIT2dq7mURhfZ_LGN9udksfei3O4M/edit?gid=0#gid=0"
-                            target="_blank">
-                            <i class="fa fa-table"></i>
-                            Seguimiento de estado
-                          </a>
-                          <p>Para más información escribe a: <a href="mailto:contacto@pjud.cl">contacto@pjud.cl</a></p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFAQ">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseFAQ" aria-expanded="false" aria-controls="collapseFAQ">
-                          <i class="fas fa-question me-1"></i><strong> Preguntas frecuentes</strong>
-                        </button>
-                      </h2>
-                      <div id="collapseFAQ" class="accordion-collapse collapse" aria-labelledby="headingFAQ"
-                        data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body">
-                          <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                            Soy postulante en práctica y debo ver alegatos, ¿A quien debo avisar para poder ingresar a
-                            una reunión?
-                          </button>
-                          <div class="collapse" id="collapseExample1">
-                            <div class="text-center">
-                              <br>
-                              <h5>Debe dar aviso a atención de publico</h5>
-                              <br>
-                              <a href="https://zoom.us/j/99596962879" target="_blank" class="btn btn-primary btn-block">
-                                <i class="fa fa-video-camera"></i>
-                                Atención de publico Zoom
-                              </a>
-                              <br>
-                              <p class="text-danger">
-                                <td>Horario de atención: 09:00 AM - 13:00 PM</td>
-                              </p>
-                              <a href="tel:+632266422" target="_blank" class="btn btn-lg btn-success btn-block">
-                                <i class="fa fa-phone"></i>
-                                Atención Telefonica 1
-                                <br>
-                                63 2 266422
-                              </a>
-                              <a href="tel:+632266427" target="_blank" class="btn btn-lg btn-success btn-block">
-                                <i class="fa fa-phone"></i>
-                                Atención Telefonica 2
-                                <br>
-                                63 2 266427
-                              </a>
-                              <br>
-                              <p class="text-danger">
-                                <td>Horario de atención telefonico: 08:30 AM - 13:00 PM</td>
-                                <br>
-                              </p>
-                            </div>
-                          </div>
-
-                          <hr>
-
-                          <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                            Llevo mucho tiempo esperando el poder ingresar a una sala y me pregunto ¿Habrá algún
-                            problema del porqué del retraso?
-                          </button>
-                          <div class="collapse" id="collapseExample2">
-                            <div class="text-center">
-                              <br>
-                              <h6>1. Diríjase a la sección titulada “Salas de audiencia”. </h6>
-                              <p class="card-title text-center">
-                                <img src="img/sala1.png" width="300px">
-                                <br>
-                                <h6>
-                                  2. En el paso 3 encontrara 2 botones: “Ver tabla sala 1” y “Ver tabla sala 2”, al
-                                  seleccionar uno de ellos, se abrirá un Excel
-                                  donde podrá ver el estado de la sala. </h6>
-                              </p>
-                              <p class="card-title text-center">
-                                <img src="img/sala2.png" width="300px">
-                                <br>
-                                <h6>3. Si tiene dudas contactar en atención de publico. </h6>
-                                <a href="https://zoom.us/j/99596962879" target="_blank" class="btn btn-lg btn-primary">
-                                  <i class="fa fa-video-camera"></i>
-                                  Atención de publico Zoom
-                                </a>
-                              </p>
-                              <br>
-                              <br>
-                              <a href="tel:+632266422" target="_blank" class="btn btn-lg btn-success">
-                                <i class="fa fa-phone"></i>
-                                Atención Telefonica 1
-                                <br>
-                                63 2 266422
-                              </a>
-                              <br>
-                              <br>
-                              <a href="tel:+632266427" target="_blank" class="btn btn-lg btn-success">
-                                <i class="fa fa-phone"></i>
-                                Atención Telefonica 2
-                                <br>
-                                63 2 266427
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalSecretaria" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Secretaría</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body text-start">
-              <div class="card mb-3">
-                <div class="card-body">
-                  <h6><i class="fas fa-pen me-1"></i><strong> Autorización de patrocinio y poder.</strong></h6>
-                  <p>Para realizar la autorización debe realizar una videollamada al siguiente número:</p>
-                  <a href="https://wa.me/56977061446" class="btn btn-success mb-2">📲 Atención a través de Whatsapp +56
-                    9 77061446</a>
-                  <p>Previa coordinación con este mismo número. Las partes deben presentar cédula de identidad.</p>
-                  <p><strong>Horarios:</strong><br>Lunes a Viernes de 10:30 a 13:30 horas</p>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card-body">
-                  <h6><i class="fas fa-pen me-1"></i><strong> Solicitar Certificado de Queja</strong></h6>
-                  <ol class="mb-1">
-                    <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
-                    <li>Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a <a
-                        href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la
-                      causa.</li>
-                    <li>Vía WhatsApp al número <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9
-                        77061446</a>, indicando nombre del solicitante y rol de la causa.<br><em>Horario: Lunes a
-                        viernes de 08:00 a 14:00 hrs</em></li>
-                  </ol>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <h6><i class="fas fa-pen me-1"></i><strong> Solicitar Certificado para requerimiento de
-                      inaplicabilidad al Tribunal Constitucional</strong></h6>
-                  <ol class="mb-1">
-                    <li>Presentando solicitud en Oficina Judicial Virtual (<a href="#">OJV</a>).</li>
-                    <li>Enviar correo a <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a> con copia a <a
-                        href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>, indicando nombre del solicitante y rol de la
-                      causa.</li>
-                    <li>Vía WhatsApp al número <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">+56 9
-                        77061446</a>, indicando nombre del solicitante y rol de la causa.<br><em>Horario: Lunes a
-                        viernes de 08:00 a 14:00 hrs</em></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-      <div class="modal fade" id="modalrecurso" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Presentación de un Recurso de Protección o Recurso de Amparo</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-             
-                <div class="col-md-6">
-                  <div class="card mb-3">
-                    <div class="card-header fw-bold">Soy abogado</div>
-                    <div class="card-body">
-                      <p class="mb-0">
-                        Se advierte que el ingreso de demandas, escritos y documentos recibidos por correo electrónico para causas ingresadas a contar del día 18 de junio de 2016, se deberá realizar en la oficina judicial 
-                        (<a target="_blank" href="https://oficinajudicialvirtual.pjud.cl/home/index.php">oficinajudicialvirtual.pjud.cl</a>) 
-                        de acuerdo a lo señalado en los artículos 5° y 6° de la Ley N°20.886 y artículo 3° del Acta 37-2016, 
-                        se prescindirá la presentación del correo electrónico al tribunal con el fin de evitar la doble tramitación. 
-                        Por lo que estos deberán ingresar únicamente por la Oficina Judicial Virtual (OJV).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                       <div class="col-md-6">
-                        <div class="card mb-3">
-                          <div class="card-header fw-bold">No soy abogado</div>
-                          <div class="card-body">
-                            <h6 class="fw-bold text-center">Modalidades de presentación</h6>
-
-                            <div class="accordion" id="accordionRecurso">
-
-                            
-                              <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingPresencial">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePresencial" aria-expanded="true" aria-controls="collapsePresencial">
-                                    📄 Forma presencial
-                                  </button>
-                                </h2>
-                                <div id="collapsePresencial" class="accordion-collapse collapse" aria-labelledby="headingPresencial" data-bs-parent="#accordionRecurso">
-                                  <div class="accordion-body">
-                                    <ol class="mt-2">
-                                      <li>Se pueden acercar a las dependencias de esta Corte de Apelaciones con su escrito en papel simple.</li>
-                                      <li>
-                                        Descargar la siguiente plantilla de Recurso de Protección o la plantilla de Recurso de Amparo y presentarla con el formulario ya completo:
-                                        <div class="d-flex justify-content-around align-items-center mt-3 mb-3">
-                                          <div class="text-center">
-                                            <a href="docs/recurso_proteccion.docx" download>
-                                              <img src="img/word.png" alt="Word icon" width="60"><br>
-                                              Descargar Recurso de Protección
-                                            </a>
-                                          </div>
-                                          <div class="text-center">
-                                            <a href="docs/recurso_amparo.docx" download>
-                                              <img src="img/word.png" alt="Word icon" width="60"><br>
-                                              Descargar Recurso de Amparo
-                                            </a>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li>Solicitar la plantilla en el mesón de atención de público para su posterior presentación.</li>
-                                    </ol>
-                                  </div>
-                                </div>
-                              </div>
-
-                           
-                              <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOnline">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnline" aria-expanded="false" aria-controls="collapseOnline">
-                                    🌐 Canales de presentación online
-                                  </button>
-                                </h2>
-                                <div id="collapseOnline" class="accordion-collapse collapse" aria-labelledby="headingOnline" data-bs-parent="#accordionRecurso">
-                                  <div class="accordion-body">
-                                    <ol>
-                                      <li>
-                                        A través de la oficina judicial virtual con su clave única.
-                                        <div class="text-center mt-2 mb-2">
-                                          <a target="_blank" href="https://oficinajudicialvirtual.pjud.cl/home/index.php">
-                                            <img src="img/oficina.png" class="img-fluid w-75" alt="Oficina Judicial Virtual">
-                                          </a>
-                                        </div>
-                                      </li>
-                                      <li>
-                                        Enviando un correo electrónico a <strong>admcausas_ca_valdivia@pjud.cl</strong>, la presentación adjunta debe ser en formato PDF.
-                                        <br>Si necesita anexar una foto, video o audio, ésta debe ser presentada en medios multimedia como CD o Pendrives, en las dependencias de esta Corte de Apelaciones.
-                                      </li>
-                                    </ol>
-                                  </div>
-                                </div>
-                              </div>  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-              
-              <div class="modal fade" id="modalBuzon" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Buzón</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form id="surveyForm">
-                        <div class="mb-3 text-center">
-                          <p class="mb-2">&#191;Qué tan satisfecho(a) estás con la página?</p>
-                          <div id="starRating" class="star-rating mb-2">
-                           <i class="bi bi-star" data-value="1"></i>
-                           <i class="bi bi-star" data-value="2"></i>
-                           <i class="bi bi-star" data-value="3"></i>
-                           <i class="bi bi-star" data-value="4"></i>
-                           <i class="bi bi-star" data-value="5"></i>
-                          </div>
-                          <input type="hidden" id="ratingInput" name="rating" value="0">
-                        </div>
-                        <div class="mb-3">
-                          <label for="comment" class="form-label">Comentarios</label>
-                          <textarea class="form-control" id="comment" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
@@ -1039,7 +284,16 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
     <script src="script.js"></script>
-
+    <script>
+      $(document).ready(function() {
+        $(".info").on("click", function () {
+          var tab = $(this).data('tab');
+          console.log(tab);
+          $('.tab-info').addClass('d-none')
+          $("#"+tab).removeClass('d-none');
+        });
+      });
+    </script>
 </body>
 
 </html>
