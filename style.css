@@ -1,56 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
+/* Fuente global */
 body {
   font-family: 'Mukta', sans-serif;
 }
 
+/* Tarjetas responsivas */
 .card-responsive {
   width: 100%;
 }
+
 @media (min-width: 576px) {
   .card-responsive {
     max-width: 18rem;
   }
 }
 
-
+/* Tarjetas con resumen */
 .card-resumen {
   max-height: 140px;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
 
+/* Tarjetas expandidas */
 .card-expandida {
-max-height: 1000px !important;
-overflow: visible;
+  max-height: 1000px !important;
+  overflow: visible;
 }
 
+/* Botón expandir */
 .btn-toggle {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
+/* Efecto hover sobre imágenes en títulos de tarjeta */
 .card-title img:hover {
   transform: scale(1.1);
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
+/* Imágenes del carrusel general */
 .carousel-item img {
   height: 100vh;
   min-height: 300px;
   object-fit: cover;
 }
 
+/* Carrusel específico de postulantes */
 #carouselPostulantes .carousel-item img {
   height: 25vh;
   min-height: 150px;
+  object-fit: cover;
 }
 
+/* Acordeón postulantes */
 #accordionPostulantes {
   height: auto;
   overflow-y: visible;
 }
 
-
+/* Carrusel con texto superpuesto */
 #carouselExampleSlidesOnly {
   position: relative;
 }
@@ -59,6 +69,7 @@ margin-top: 10px;
   filter: brightness(50%);
 }
 
+/* Texto de bienvenida centrado */
 .welcome-text {
   position: absolute;
   top: 50%;
@@ -74,4 +85,3 @@ margin-top: 10px;
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 4rem);
 }
-
