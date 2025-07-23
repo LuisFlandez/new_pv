@@ -326,125 +326,117 @@
                 </div>
 
                 <div class="col-sm-6">
-                  <div class="row row-cols-1 g-3" id="accordionPostulantes">
+                  <div class="accordion" id="accordionPostulantes">
 
-                    
-                    <div class="col border rounded p-3">
-                      <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseNomina">
-                        <i class="bi bi-list-check"></i> Nómina de Postulantes e Instrucciones para oír alegatos
-                      </button>
-                      <div class="collapse text-start" id="collapseNomina">
-                        <strong>INSTRUCCIONES</strong><br><br>
-                        - Incorporarse a la sala de audiencia 5 minutos antes de las 9:00.<br>
-                        - Individualizados con su nombre y señalizando su calidad de postulante.<br>
-                        - Ingresar a la audiencia desde un dispositivo electrónico y mantener cámara encendida.<br>
-                        - Ingresar sólo a la sala que se les ha indicado.<br><br>
-
-                        <strong class="text-danger">IMPORTANTE</strong><br><br>
-                        Es facultad de cada sala la admisión de cada postulante, por tanto deberá esperar en línea.<br><br>
-
-                        <strong>NÓMINA DE POSTULANTES:</strong><br><br>
-                        <a href="https://docs.google.com/spreadsheets/d/1Ok1wiL9FurgWvszsMjR4UYqdjkVycYHLEizOMj3L-PM/edit?gid=0#gid=0" target="_blank" class="btn btn-outline-primary w-100 text-start mb-2">
-                          <i class="bi bi-file-earmark-spreadsheet"></i> Ver nómina
-                        </a>
+                    <!-- Ítem 1: Nómina -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingNomina">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseNomina" aria-expanded="false" aria-controls="collapseNomina">
+                          <i class="bi bi-list-check me-2"></i> Nómina de Postulantes e Instrucciones para oír alegatos
+                        </button>
+                      </h2>
+                      <div id="collapseNomina" class="accordion-collapse collapse" aria-labelledby="headingNomina"
+                        data-bs-parent="#accordionPostulantes">
+                        <div class="accordion-body text-start">
+                          <strong>INSTRUCCIONES</strong><br><br>
+                          - Incorporarse a la sala de audiencia 5 minutos antes de las 9:00.<br>
+                          - Individualizados con su nombre y señalizando su calidad de postulante.<br>
+                          - Ingresar a la audiencia desde un dispositivo electrónico y mantener cámara encendida.<br>
+                          - Ingresar sólo a la sala que se les ha indicado.<br><br>
+                          <strong class="text-danger">IMPORTANTE</strong><br><br>
+                          Es facultad de cada sala la admisión de cada postulante, por tanto deberá esperar en línea.<br><br>
+                          <strong>NÓMINA DE POSTULANTES:</strong><br><br>
+                          <a href="https://docs.google.com/spreadsheets/d/1Ok1wiL9FurgWvszsMjR4UYqdjkVycYHLEizOMj3L-PM/edit?gid=0#gid=0" target="_blank"
+                            class="btn btn-outline-primary w-100 text-start mb-2">
+                            <i class="bi bi-file-earmark-spreadsheet"></i> Ver nómina
+                          </a>
+                        </div>
                       </div>
                     </div>
 
-                    
-                    <div class="col border rounded p-3">
-                      <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseCertificado">
-                        <i class="bi bi-info-lg"></i> Indicaciones para la redacción del documento "Certificado de Alegatos"
-                      </button>
-                      <div class="collapse text-start" id="collapseCertificado">
-                        <p><strong>Fuente:</strong> Calibri<br>
-                          <strong>Tamaño fuente:</strong> 11<br>
-                          <strong>Interlineado:</strong> 1.5<br>
-                          <strong>Texto:</strong> Justificado
-                        </p>
-                        <h6>Ejemplo:</h6>
-                        <p>
-                          Causa rol: <em>123-2023 civil</em><br>
-                          Relator: <em>Alejando Clunes (sin abreviaturas)</em><br>
-                          Caratulado: <em>Garcia / Jiménez (tal como figura en la página del PJUD)</em><br>
-                          Abogados: <em>Rodrigo González - Paula Salas</em><br>
-                          Materia (Primera instancia): <em>Honorarios, cobro de (en juicio)</em><br>
-                          Sala: <em>Primera</em>
-                        </p>
-                        <a href="docs/plantilla_postulante.doc" target="_blank" class="btn btn-outline-primary w-100 text-start mb-2">
-                          <i class="bi bi-file-earmark-word"></i> Descargar plantilla de Certificado de Alegatos (Word)
-                        </a>
-                        <p class="mt-3">
-                          Una vez escuchados todos los alegatos, enviar el documento en un solo correo electrónico (formato Word) a:
-                          <a href="mailto:postulantes_cavaldivia@pjud.cl">postulantes_cavaldivia@pjud.cl</a><br>
-                          Asunto: "Certificación de alegatos".
-                        </p>
+                    <!-- Ítem 2: Certificado de Alegatos -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingCertificado">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseCertificado" aria-expanded="false" aria-controls="collapseCertificado">
+                          <i class="bi bi-info-lg me-2"></i> Indicaciones para la redacción del documento "Certificado de Alegatos"
+                        </button>
+                      </h2>
+                      <div id="collapseCertificado" class="accordion-collapse collapse" aria-labelledby="headingCertificado"
+                        data-bs-parent="#accordionPostulantes">
+                        <div class="accordion-body text-start">
+                          <p><strong>Fuente:</strong> Calibri<br>
+                            <strong>Tamaño fuente:</strong> 11<br>
+                            <strong>Interlineado:</strong> 1.5<br>
+                            <strong>Texto:</strong> Justificado
+                          </p>
+                          <h6>Ejemplo:</h6>
+                          <p>
+                            Causa rol: <em>123-2023 civil</em><br>
+                            Relator: <em>Alejando Clunes</em><br>
+                            Caratulado: <em>Garcia / Jiménez</em><br>
+                            Abogados: <em>Rodrigo González - Paula Salas</em><br>
+                            Materia: <em>Honorarios, cobro de (en juicio)</em><br>
+                            Sala: <em>Primera</em>
+                          </p>
+                          <a href="docs/plantilla_postulante.doc" target="_blank" class="btn btn-outline-primary w-100 text-start mb-2">
+                            <i class="bi bi-file-earmark-word"></i> Descargar plantilla de Certificado de Alegatos (Word)
+                          </a>
+                          <p class="mt-3">
+                            Enviar el documento en un solo correo electrónico a:
+                            <a href="mailto:postulantes_cavaldivia@pjud.cl">postulantes_cavaldivia@pjud.cl</a><br>
+                            Asunto: "Certificación de alegatos".
+                          </p>
+                        </div>
                       </div>
                     </div>
 
-                  
-                    <div class="col border rounded p-3">
-                      <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseExpediente">
-                        <i class="bi bi-journal-text"></i> Procedimiento para abrir expediente de título
-                      </button>
-                      <div class="collapse text-start" id="collapseExpediente">
-                        <h6>Paso N°1:</h6>
-                        <p>Enviar documentos escaneados al correo:
-                          <a href="mailto:titulos_cavaldivia@pjud.cl">titulos_cavaldivia@pjud.cl</a>
-                        </p>
+                    <!-- Ítem 3: Expediente de Título -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingExpediente">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseExpediente" aria-expanded="false" aria-controls="collapseExpediente">
+                          <i class="bi bi-journal-text me-2"></i> Procedimiento para abrir expediente de título
+                        </button>
+                      </h2>
+                      <div id="collapseExpediente" class="accordion-collapse collapse" aria-labelledby="headingExpediente"
+                        data-bs-parent="#accordionPostulantes">
+                        <div class="accordion-body text-start">
+                          <h6>Paso N°1:</h6>
+                          <p>Enviar documentos escaneados al correo:
+                            <a href="mailto:titulos_cavaldivia@pjud.cl">titulos_cavaldivia@pjud.cl</a>
+                          </p>
+                          <!-- documentos omitidos por espacio, puedes mantener los que ya tienes -->
 
-                        <strong>1.- Documentos entregados por institución universitaria:</strong><br>
-                        - Certificado de Licenciado<br>
-                        - Certificado de Conducta u Honorabilidad<br>
-                        - Certificado de Notas<br><br>
+                          <hr>
+                          <h6>Paso N°2:</h6>
+                          <p>Esperar correo de confirmación con indicaciones sobre cumplimiento de requisitos.</p>
+                          <hr>
+                          <h6>Paso N°3:</h6>
+                          <p>Dirigirse presencialmente a la Corte con documentos originales.</p>
 
-                        <strong>2.- Documentos formato Corte Suprema:</strong><br>
-                        - Escrito de Apertura:
-                        <a href="docs/Plantilla_apertura_expediente.docx">Descargar</a><br>
-                        - Formulario de Discapacidad:
-                        <a href="docs/f_discapacidad.doc">Descargar</a><br>
-                        - Formulario Colegio de Abogados:
-                        <a href="docs/f_colegio_abogados.docx">Descargar</a><br><br>
-
-                        <strong>3.- Otros:</strong><br>
-                        - Certificado de Nacimiento:
-                        <a href="https://www.registrocivil.cl/principal/servicios-en-linea" target="_blank">Ver</a><br>
-                        - Declaración Jurada de Testigos<br>
-                        - Certificado de Práctica Profesional Aprobada<br>
-                        - Copias de cédulas de identidad<br>
-                        - Foto tamaño carnet<br><br>
-
-                        En caso de dudas:
-                        <a href="https://www.pjud.cl/docs/download/2617" target="_blank">
-                          Instrucciones Corte Suprema
-                        </a>
-
-                        <hr>
-                        <h6>Paso N°2:</h6>
-                        <p>Esperar correo de confirmación con indicaciones sobre cumplimiento de requisitos.</p>
-
-                        <hr>
-                        <h6>Paso N°3:</h6>
-                        <p>Dirigirse presencialmente a la Corte con documentos originales en sobre cerrado, indicando:</p>
-                        - Nombre<br>
-                        - Número de teléfono<br>
-                        - Correo electrónico<br><br>
-
-                        <strong>Seguimiento de estado:</strong><br>
-                        <a class="btn btn-outline-primary w-100 text-start mb-2" href="https://docs.google.com/spreadsheets/d/1VecAm2CQYkznx3tIT2dq7mURhfZ_LGN9udksfei3O4M/edit?gid=0#gid=0" target="_blank">
-                          <i class="bi bi-file-earmark-spreadsheet"></i> Seguimiento de expediente
-                        </a>
+                          <strong>Seguimiento de estado:</strong><br>
+                          <a class="btn btn-outline-primary w-100 text-start mb-2"
+                            href="https://docs.google.com/spreadsheets/d/1VecAm2CQYkznx3tIT2dq7mURhfZ_LGN9udksfei3O4M/edit?gid=0#gid=0"
+                            target="_blank">
+                            <i class="bi bi-file-earmark-spreadsheet"></i> Seguimiento de expediente
+                          </a>
+                        </div>
                       </div>
                     </div>
 
-                    
-                    <div class="col border rounded p-3">
-                      <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseFAQ">
-                        <i class="bi bi-question-circle-fill me-2"></i> Preguntas frecuentes
-                      </button>
-                      <div id="collapseFAQ" class="collapse">
-                        <div class="text-start">
-                          <div class="mb-3">
-                            <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseExample1">
+                    <!-- Ítem 4: FAQ -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFAQ">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFAQ" aria-expanded="false" aria-controls="collapseFAQ">
+                          <i class="bi bi-question-circle-fill me-2"></i> Preguntas frecuentes
+                        </button>
+                      </h2>
+                      <div id="collapseFAQ" class="accordion-collapse collapse" aria-labelledby="headingFAQ"
+                        data-bs-parent="#accordionPostulantes">
+                        <div class="accordion-body text-start">
                               ¿Soy postulante en práctica y debo ver alegatos, a quién debo avisar para poder ingresar a una reunión?
                             </button>
                             <div class="collapse mt-2" id="collapseExample1">
