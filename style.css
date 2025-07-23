@@ -49,8 +49,8 @@ body {
 
 /* Carrusel específico de postulantes */
 #carouselPostulantes .carousel-item img {
-  height: 25vh;
-  min-height: 150px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
