@@ -109,17 +109,24 @@
                     
                     
                     <div class="col border-end border-bottom bi bi-telephone-forward">
-                      <strong> Atención telefónica:</strong>
-                      <button class="btn btn-info w-100 mt-2 mb-2" data-bs-toggle="collapse" data-bs-target="#collapseTelefono">
-                        <i class="bi bi-arrow-down"></i> Ver más
+                        <button class="btn w-100 text-start" data-bs-toggle="modal" data-bs-target="#modalTelefono">
+                        <strong> Atención telefónica:</strong>
                       </button>
-                      <div class="collapse" id="collapseTelefono">
-                        <a href="tel:692266400" class="btn btn-success btn-block mb-2">
-                          <i class="bi bi-telephone-inbound"></i> Número central 63 2 266400
-                        </a>
-                        <button class="btn btn-warning  btn-block mb-2" data-bs-toggle="modal" data-bs-target="#modalICAValdivia">
-                          <i class="bi bi-telephone-inbound"></i> ICA Valdivia: otros números disponibles
-                        </button>
+                        </div>
+
+                    <div class="modal fade" id="modalTelefono" tabindex="-1" aria-labelledby="modalTelefonoLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalTelefonoLabel">Atención telefónica</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-center">
+                            <button class="btn btn-warning btn-block mb-2" data-bs-toggle="modal" data-bs-target="#modalICAValdivia">
+                              <i class="bi bi-telephone-inbound"></i> ICA Valdivia: otros números disponibles
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -179,37 +186,46 @@
                     
 
                     <div class="col border-bottom bi bi-envelope">
-                      <strong> Tipos de atención vía correo electrónico:</strong>
-                      <button class="btn btn-info w-100 mt-2 btn-block mb-2" data-bs-toggle="collapse" data-bs-target="#collapseCorreo">
-                        <i class="bi bi-arrow-down"></i> Ver más
+                      <button class="btn w-100 text-start" data-bs-toggle="modal" data-bs-target="#modalCorreo">
+                        <strong> Tipos de atención vía correo electrónico:</strong>
                       </button>
-                      <div class="collapse text-start" id="collapseCorreo">
-                        <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-block mt-2">
-                          <i class="bi bi-envelope-arrow-down"></i> ca_valdivia@pjud.cl
-                        </a>
-                        <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                        <p style="text-align: justify;">
-                          <i>Recepción de <b>solicitudes o presentaciones no relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
-                        </p>
-                        <hr>
-                        <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-block mt-2">
-                          <i class="bi bi-envelope-arrow-down"></i> admcausas_ca_valdivia@pjud.cl
-                        </a>
-                        <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                        <p style="text-align: justify;">
-                          <i>Recepción de <b>solicitudes o presentaciones relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
-                        </p>
-                        <hr>
-                        <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-block mt-2">
-                          <i class="bi bi-envelope-arrow-down"></i> presidencia_cavaldivia@pjud.cl
-                        </a>
-                        <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                        <p style="text-align: justify;">
-                          <i>Solicitud de audiencia con el Sr. Presidente de la ILTMA. Corte de Apelaciones.</i>
-                        </p>
-                        <p style="text-align: justify;">
-                          <i>En la solicitud se deberá adjuntar los datos del solicitante y/o representante, materia a tratar, día y hora propuesta y un número de contacto.</i>
-                        </p>
+                      </div>
+                    <div class="modal fade" id="modalCorreo" tabindex="-1" aria-labelledby="modalCorreoLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalCorreoLabel">Tipos de atención vía correo electrónico</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <a href="mailto:ca_valdivia@pjud.cl" class="btn btn-info btn-block mt-2">
+                              <i class="bi bi-envelope-arrow-down"></i> ca_valdivia@pjud.cl
+                            </a>
+                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
+                            <p style="text-align: justify;">
+                              <i>Recepción de <b>solicitudes o presentaciones no relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
+                            </p>
+                            <hr>
+                            <a href="mailto:admcausas_ca_valdivia@pjud.cl" class="btn btn-info btn-block mt-2">
+                              <i class="bi bi-envelope-arrow-down"></i> admcausas_ca_valdivia@pjud.cl
+                            </a>
+                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
+                            <p style="text-align: justify;">
+                              <i>Recepción de <b>solicitudes o presentaciones relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
+                            </p>
+                            <hr>
+                            <a href="mailto:presidencia_cavaldivia@pjud.cl" class="btn btn-info btn-block mt-2">
+                              <i class="bi bi-envelope-arrow-down"></i> presidencia_cavaldivia@pjud.cl
+                            </a>
+                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
+                            <p style="text-align: justify;">
+                              <i>Solicitud de audiencia con el Sr. Presidente de la ILTMA. Corte de Apelaciones.</i>
+                            </p>
+                            <p style="text-align: justify;">
+                              <i>En la solicitud se deberá adjuntar los datos del solicitante y/o representante, materia a tratar, día y hora propuesta y un número de contacto.</i>
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
