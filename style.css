@@ -60,6 +60,11 @@ body {
   overflow-y: visible;
 }
 
+#accordionSecretaria {
+  height: auto;
+  overflow-y: visible;
+}
+
 /* Carrusel con texto superpuesto */
 #carouselExampleSlidesOnly {
   position: relative;
