@@ -180,54 +180,22 @@
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
 }
-:root {
-  --bs-institucionalcolor: #7194c9;
-  --bs-institucionalcolor-rgb: 113, 148, 201;
-}
 
-/* Utilidades de color */
-.bg-institucionalcolor {
-  background-color: var(--bs-institucionalcolor) !important;
-}
-.text-institucionalcolor {
-  color: var(--bs-institucionalcolor) !important;
-}
-.border-institucionalcolor {
-  border-color: var(--bs-institucionalcolor) !important;
-}
-
-/* Botón sólido */
-.btn-institucionalcolor {
+.btn-principal {
   --bs-btn-color: #fff;
-  --bs-btn-bg: var(--bs-institucionalcolor);
-  --bs-btn-border-color: var(--bs-institucionalcolor);
+  --bs-btn-bg: var(--bs-principal);
+  --bs-btn-border-color: var(--bs-principal);
   --bs-btn-hover-bg: #5f83bb;
   --bs-btn-hover-border-color: #5f83bb;
-  --bs-btn-focus-shadow-rgb: var(--bs-institucionalcolor-rgb);
+  --bs-btn-focus-shadow-rgb: var(--bs-principal-rgb);
   --bs-btn-active-bg: #4d70a5;
   --bs-btn-active-border-color: #4d70a5;
-  --bs-btn-disabled-bg: var(--bs-institucionalcolor);
-  --bs-btn-disabled-border-color: var(--bs-institucionalcolor);
+  --bs-btn-disabled-bg: var(--bs-principal);
+  --bs-btn-disabled-border-color: var(--bs-principal);
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-
-/* Botón contorno */
-.btn-outline-institucionalcolor {
-  --bs-btn-color: var(--bs-institucionalcolor);
-  --bs-btn-border-color: var(--bs-institucionalcolor);
-  --bs-btn-hover-bg: var(--bs-institucionalcolor);
-  --bs-btn-hover-border-color: var(--bs-institucionalcolor);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-active-bg: #4d70a5;
-  --bs-btn-active-border-color: #4d70a5;
-  --bs-btn-disabled-color: var(--bs-institucionalcolor);
-  --bs-btn-disabled-border-color: var(--bs-institucionalcolor);
-  color: var(--bs-btn-color);
-  border-color: var(--bs-btn-border-color);
-}
-
 *,
 *::before,
 *::after {
