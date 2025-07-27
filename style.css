@@ -90,3 +90,13 @@ body {
   text-align: center;
   font-size: clamp(1.5rem, 6vw, 4rem);
 }
+
+.map-container iframe {
+    border: none;
+    height: 250px;
+    transition: transform 0.3s ease;
+  }
+
+  .map-container iframe:hover {
+    transform: scale(1.01);
+  }
