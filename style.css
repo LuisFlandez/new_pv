@@ -105,3 +105,10 @@ body {
 .info:hover {
   color: #fff !important;
 }
+
+
+/* Cambiar letras en botones de abogado y no abogado al pasar el cursor */
+#btnSoyAbogado:hover,
+#btnNoAbogado:hover {
+  color: #fff !important;
+}

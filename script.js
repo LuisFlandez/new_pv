@@ -33,17 +33,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const btnAbogado = document.getElementById('btnSoyAbogado');
-  const btnNoAbogado = document.getElementById('btnNoAbogado');
-
-  if (btnAbogado) {
-    const modalAbogado = new bootstrap.Modal(document.getElementById('modalAbogado'));
-    btnAbogado.addEventListener('click', () => modalAbogado.show());
-  }
-
-  if (btnNoAbogado) {
-    const modalNoAbogado = new bootstrap.Modal(document.getElementById('modalNoAbogado'));
-    btnNoAbogado.addEventListener('click', () => modalNoAbogado.show());
-  }
-});
