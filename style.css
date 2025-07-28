@@ -100,3 +100,8 @@ body {
   .map-container iframe:hover {
     transform: scale(1.01);
   }
+
+/* Cambio de color en botones principales al pasar el cursor */
+.info:hover {
+  color: #fff !important;
+}
