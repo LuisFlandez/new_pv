@@ -197,13 +197,10 @@
   border-color: var(--bs-btn-border-color);
 }
 
-:root {
-  --bs-colorborder: #ab5d1d;
-  --bs-colorborder-rgb: 171, 93, 29;
+.border-institucional {
+  border-color: rgb(173, 54, 68) !important;
 }
-.border-colorborder {
-  border-color: var(--bs-colorborder) !important;
-}
+
 *,
 *::before,
 *::after {
