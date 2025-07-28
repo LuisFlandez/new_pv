@@ -31,5 +31,13 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll);
 });
 
+const btnSoyAbogado = document.getElementById('btnSoyAbogado');
+  const btnNoAbogado = document.getElementById('btnNoAbogado');
+  if (btnSoyAbogado && btnNoAbogado) {
+    const modalAbogado = new bootstrap.Modal(document.getElementById('modalAbogado'));
+    const modalNoAbogado = new bootstrap.Modal(document.getElementById('modalNoAbogado'));
 
+    btnSoyAbogado.addEventListener('mouseenter', () => modalAbogado.show());
+    btnNoAbogado.addEventListener('mouseenter', () => modalNoAbogado.show());
+  }
 
