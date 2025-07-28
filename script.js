@@ -33,24 +33,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const btnAbogado = document.getElementById('btnSoyAbogado');
+  const btnNoAbogado = document.getElementById('btnNoAbogado');
 
-let expandido = false;
-
-function toggleCard() {
-  const contenido = document.getElementById('contenidoExtendido');
-  const card = document.getElementById('contenidoCard');
-  const btn = event.target;
-
-  if (!expandido) {
-    contenido.style.display = 'block';
-    card.classList.add('card-expandida');
-    btn.innerText = 'Ver menos';
-    expandido = true;
-  } else {
-    contenido.style.display = 'none';
-    card.classList.remove('card-expandida');
-    btn.innerText = 'Ver más';
-    expandido = false;
+  if (btnAbogado) {
+    const modalAbogado = new bootstrap.Modal(document.getElementById('modalAbogado'));
+    btnAbogado.addEventListener('click', () => modalAbogado.show());
   }
-}
 
+  if (btnNoAbogado) {
+    const modalNoAbogado = new bootstrap.Modal(document.getElementById('modalNoAbogado'));
+    btnNoAbogado.addEventListener('click', () => modalNoAbogado.show());
+  }
+});
