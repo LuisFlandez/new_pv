@@ -29,24 +29,3 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll);
 });
 
-const btnSoyAbogado = document.getElementById('btnSoyAbogado');
-const btnNoAbogado = document.getElementById('btnNoAbogado');
-if (btnSoyAbogado && btnNoAbogado) {
-  const modalAbogado = new bootstrap.Modal(document.getElementById('modalAbogado'));
-  const modalNoAbogado = new bootstrap.Modal(document.getElementById('modalNoAbogado'));
-
-  btnSoyAbogado.addEventListener('click', () => modalAbogado.show());
-  btnNoAbogado.addEventListener('click', () => modalNoAbogado.show());
-}
-
-const btnAtencionCliente = document.getElementById('btnAtencionCliente');
-const btnAtencionCorreo = document.getElementById('btnAtencionCorreo');
-if (btnAtencionCliente && btnAtencionCorreo) {
-  const modalICAValdivia = new bootstrap.Modal(document.getElementById('modalICAValdivia'));
-  const modalCorreo = new bootstrap.Modal(document.getElementById('modalCorreo'));
-
-  btnAtencionCliente.addEventListener('click', () => modalICAValdivia.show());
-  btnAtencionCorreo.addEventListener('click', () => modalCorreo.show());
-}
-
-
