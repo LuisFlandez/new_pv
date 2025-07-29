@@ -39,3 +39,14 @@ if (btnSoyAbogado && btnNoAbogado) {
   btnNoAbogado.addEventListener('click', () => modalNoAbogado.show());
 }
 
+const btnAtencionCliente = document.getElementById('btnAtencionCliente');
+const btnAtencionCorreo = document.getElementById('btnAtencionCorreo');
+if (btnAtencionCliente && btnAtencionCorreo) {
+  const modalICAValdivia = new bootstrap.Modal(document.getElementById('modalICAValdivia'));
+  const modalCorreo = new bootstrap.Modal(document.getElementById('modalCorreo'));
+
+  btnAtencionCliente.addEventListener('click', () => modalICAValdivia.show());
+  btnAtencionCorreo.addEventListener('click', () => modalCorreo.show());
+}
+
+
