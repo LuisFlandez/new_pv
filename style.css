@@ -111,7 +111,10 @@ body {
 #btnSoyAbogado:hover,
 #btnNoAbogado:hover,
 #btnAtencionCliente:hover,
-#btnAtencionCorreo:hover {
+#btnAtencionCorreo:hover,
+#btncorreo1:hover,
+#btncorreo2:hover,
+#btncorreo3:hover {
   color: #fff !important;
 }
 
