@@ -197,9 +197,7 @@
   border-color: var(--bs-btn-border-color);
 }
 
-.border-institucional {
-  border-color: rgb(173, 54, 68) !important;
-}
+
 
 *,
 *::before,
