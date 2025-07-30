@@ -32,5 +32,160 @@
 
   </nav>
 
-</body>
+<div class="container-fluid" style="padding-top: 10px;">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <div class="card text-center shadow">
+                        <div class="card-header">
+                            Verificación de identidad
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">CUMPLIMIENTO DEL PROTOCOLO PARA EL ANUNCIO Y ALEGATOS EN LOS TRIBUNALES DURANTE EL ESTADO DE CATÁSTROFE</h6>
+                            <p class="card-text">
+                            En cumplimiento a lo dispuesto en el <a class="btn btn-danger btn-sm" href="Acta51.pdf" target="_blank">Acta N°51-2020 </a> de la Excma. Corte Suprema,
+                             a fin de efectuar los alegatos mediante conexión virtual,
+                              los Abogados y Abogadas deberán registrar su identidad ante el Ministro de Fe,
+                               remitiendo con a lo menos 24 horas de antelación a su alegato: número de teléfono,
+                             correo electrónico de contacto y copia íntegra de cédula de identidad al correo <a href="mailto:ca_valdivia@pjud.cl"> ca_valdivia@pjud.cl </a>
+                            Este trámite se podrá omitir por quienes lo hubiesen realizado con anterioridad.</p>
+                            <a class="btn btn-dark" href="mailto:ca_valdivia@pjud.cl"><i class="fa fa-envelope"></i> Enviar correo a ca_valdivia@pjud.cl </a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card text-center shadow">
+                        <div class="card-header">
+                            Buscador de verificación de identidad 
+                        </div>
+                        <div class="card-body">
+                    
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Ingrese su RUT</label>
+                                        
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" ><i class="fa fa-search"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" id="txtrut" aria-describedby="validationTooltipUsernamePrepend">
+                
+                                        </div>
+                                        <small  class="form-text text-muted">sin puntos y con guíon (ejemplo: 12345678-9)</small>
+                                    </div>
+                                    
+                                    <button class="btn btn-primary" id="join_consulta">Buscar</button>
+                                    <br>
+                                    <div id="result"></div>
+                                </div>
+                                <div class="col-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>  
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="footer-copyright text-center py-3 bg-dark text-white">© 2020 Desarrollado por: 
+            <a href="mailto:ca_valdivia@pjud.cl"> Corte de Apelaciones de Valdivia</a>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="modal_info">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="titulo_modal"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3 shadow" id="imagen">
+                        <div class="row no-gutters" id="cuerpo_modal">
+                          
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Acreditación de identidad de Abogados</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>El sistema de verificación de identidad de la CA Valdivia ha actualizado su funcionamiento, 
+                para lo cual se solicita a los abogados litigantes que remiten sus antecedentes que acrediten su calidad de tal.</p>
+            
+            <p>Para lo anterior, se pide que Ud. ingrese su RUT y compruebe el estado de su validación.</p>
+            
+            <p>Esta verificación tiene un plazo de renovación de seis meses, que a cuyo  término , se requerirá una nueva validación.</p>
+            
+            <p class="text-center">
+            Juan Vio Vargas<br>
+            Secretario<br>
+            Corte de Apelaciones de Valdivia
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       <script>
+        
+            
+            $(document).ready(function () {
+                $('#exampleModalCenter').modal('show')
+            });
+
+            $( "#join_consulta" ).click(function() {
+                if ($( "#txtrut" ).val() == "") {
+                    $("#result").html('<div class="alert alert-danger" role="alert">Debe ingresar el campo rut.</div>');
+                }else{
+                    var datos = {
+                        "accion":"3",
+                        "rut": $( "#txtrut" ).val()
+                    };
+
+                        $.ajax({              
+                            data:  datos,
+                            url:   'action.php',
+                            type:  'post',
+                            success:  function (response) {
+                                $("#result").html('');
+                                $("#cuerpo_modal").html(response);
+                                $( "#modal_info" ).modal("show");
+                            }
+                        })
+                }
+            });
+
+        </script>
+
+    </body>
 </html>
