@@ -191,18 +191,21 @@
                     
                     <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
                         data-bs-toggle="modal" data-bs-target="#modalICAValdivia">
-                      <div class="row g-0">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                      <div class="row">
+                        <div class="col-md-4 d-flex  justify-content-center ">
                           <img src="img/j_lic3.jpg" class="img-fluid" alt="icono atencion telefonica" width="500" height="500">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title mt-0"><p class="lead ">Atención telefónica:</p></h5>
-                            <p class="card-text mt-0">
+                            <h5 class="mb-0 align-items-center">
+                              <i class="bi bi-person-fill"></i>
+                              Atención telefónica:
+                            </h5>
+                            <p class="card-text mb-0">
                               <small>Alternativas para ser atendido vía telefónica.</small>
                             </p>
                             <div class="text-end">
-                              <button class="btn btn-sm btn-primary opacity-75">Ver medios</button>
+                              <button class="btn btn-sm btn-primary mt-4 opacity-75">Ver medios</button>
                             </div>
                           </div>
                         </div>
@@ -272,14 +275,27 @@
                       </div>
                     </div>
 
-                    <div class="col mb-3">
-                      <button id="btnAtencionCorreo" class="btn btn-principal w-100 rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow"
-                              data-bs-toggle="modal" data-bs-target="#modalCorreo">
-                        <img src="img/Atención Correo.png" alt="icono atencion correo" width="40" height="40">
-                        <strong>Atención vía correo electrónico:</strong>
-                        <p style="font-size: 0.9rem;">
-                        <em>(Alternativas para ser atendido vía correos institucionales.)</em></p>
-                      </button>
+                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
+                        data-bs-toggle="modal" data-bs-target="#modalCorreo">
+                      <div class="row">
+                        <div class="col-md-4 d-flex  justify-content-center ">
+                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono atencion telefonica" width="450" height="450">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="mb-0">
+                              <i class="bi bi-envelope-fill"></i>
+                              Atención vía correo electrónico:
+                            </h5>
+                            <p class="card-text mb-0">
+                              <small>Alternativas para ser atendido vía correos institucionales.</small>
+                            </p>
+                            <div class="text-end">
+                              <button class="btn btn-sm btn-primary mt-3 opacity-75">Ver medios</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="modal fade" id="modalCorreo" tabindex="-1" aria-labelledby="modalCorreoLabel" aria-hidden="true">
@@ -899,26 +915,55 @@
                 <div class="col-sm-5">
                   <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
                 </div>
-                <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
-                  <div class="mb-4 w-75">
-                    <button id="btnSoyAbogado" class="btn btn-principal w-100 rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow" data-bs-toggle="modal" data-bs-target="#modalAbogado">
-                      <img src="img/Justicia.png" alt="icono atencion correo" width="40" height="40">
-                      Soy Abogado
-                      <p style="font-size: 0.9rem;">
-                        <em>(Puedes presentar recursos de amparo o protección en la Oficina Judicial Virtual o en la Corte de Apelaciones.)</em></p>
-                    </button>
-                  </div>
-                  <div class="w-75">
-                    <button  id="btnNoAbogado" class="btn btn-principal rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow" data-bs-toggle="modal" data-bs-target="#modalNoAbogado">
-                      <img src="img/Persona .png" alt="icono atencion correo" width="40" height="40">
-                      No soy abogado
-                      <p style="font-size: 0.9rem;">
-                        <em>(Puedes acudir a la Corte de Apelaciones para presentar tu recurso; el tribunal podrá asignar un abogado de turno para tu representación.)</em></p>
-                    </button>
-                  </div>
-                </div>
-              </div>
+                
+                      <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
+                          data-bs-toggle="modal" data-bs-target="#modalAbogado">
+                        <div class="row">
+                          <div class="col-md-4 d-flex  justify-content-center ">
+                            <img src="img/j_lic3.jpg" class="img-fluid" alt="icono abogado" width="500" height="500">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="mb-0 align-items-center">
+                                <i class="bi bi-person-fill"></i>
+                                Soy Abogado
+                              </h5>
+                              <p class="card-text mb-0">
+                                <small>Puedes presentar recursos de amparo o protección en la Oficina Judicial Virtual o en la Corte de Apelaciones.</small>
+                              </p>
+                              <div class="text-end">
+                                <button class="btn btn-sm btn-primary mt-4 opacity-75">Ver medios</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
 
+                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
+                        data-bs-toggle="modal" data-bs-target="#modalNoAbogado">
+                      <div class="row">
+                        <div class="col-md-4 d-flex  justify-content-center ">
+                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono abogado" width="500" height="500">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="mb-0 align-items-center">
+                              <i class="bi bi-person-fill"></i>
+                              No soy abogado
+                            </h5>
+                            <p class="card-text mb-0">
+                              <small>Puedes acudir a la Corte de Apelaciones para presentar tu recurso; el tribunal podrá asignar un abogado de turno para tu representación.</small>
+                            </p>
+                            <div class="text-end">
+                              <button class="btn btn-sm btn-primary mt-4 opacity-75">Ver medios</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+              </div>
               
               <div class="modal fade" id="modalAbogado" tabindex="-1" aria-labelledby="modalAbogadoLabel" aria-hidden="true">
                 <div class="modal-dialog">
