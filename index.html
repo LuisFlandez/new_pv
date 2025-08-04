@@ -19,7 +19,7 @@
 </style>
 </head>
 
-<body>
+<body>             
 
   <!--Nav bar-->
   <nav id="mainNav" class="navbar navbar-expand-lg w-100 navbar-dark bg-transparent sticky-top px-5">
@@ -452,8 +452,8 @@
                 <div class="col-sm-5">
                   <img src="img/Corte_Apelaciones.JPG" class="rounded-4" alt="" width="100%">
                 </div>
-                <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
-                  <div class="accordion shadow mb-4 w-75" id="accordionSecretaria">
+                <div class="col-sm-7 text-center">
+                  
 
 
                     <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
@@ -465,7 +465,7 @@
                           <div class="col-sm-4 d-flex justify-content-between align-items-center">
                             <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
                               data-bs-toggle="modal" 
-                              data-bs-target="#modalVerificacion">
+                              data-bs-target="#modalPatrocinioPoder">
                               <i class="fa fa-address-card"></i>
                               Ver más
                             </a>
@@ -475,11 +475,11 @@
                     </div>
 
                     
-                    <div class="modal fade" id="modalVerificacion" tabindex="-1" aria-labelledby="modalVerificacionLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal fade" id="modalPatrocinioPoder" tabindex="-1" aria-labelledby="modalPatrocinioPoderLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="modalVerificacionLabel">Autorización de patrocinio y poder</h5>
+                            <h5 class="modal-title" id="modalPatrocinioPoderLabel">Autorización de patrocinio y poder</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
                           <div class="modal-body text-start">
@@ -502,65 +502,108 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingSecretaria2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecretaria2" aria-expanded="false" aria-controls="collapseSecretaria2">
-                          <i class="bi bi-pencil-square me-2"></i> Solicitar Certificado de queja
-                        </button>
-                      </h2>
-                      <div id="collapseSecretaria2" class="accordion-collapse collapse" aria-labelledby="headingSecretaria2" data-bs-parent="#accordionSecretaria">
-                        <div class="accordion-body text-start">
-                          <p>
-                            1.- Presentando solicitud en Oficina Judicial Virtual (<a href="https://oficinajudicialvirtual.pjud.cl/home/index.php">OJV</a>)
-                          </p>
-                          <p>
-                            2.- Enviar correo electrónico a la casilla
-                            <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a>
-                            con copia a
-                            <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>
-                            indicando nombre del solicitante y rol de la causa, dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
-                          </p>
-                          <p>
-                            3.- Vía WhatsApp al número
-                            <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">
-                              <i class="bi bi-whatsapp"></i> +56 9 77061446
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Solicitar Certificado de queja</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalCertificado">
+                              <i class="fa fa-address-card"></i>
+                              Ver más
                             </a>
-                            dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
-                          </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingSecretaria3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecretaria3" aria-expanded="false" aria-controls="collapseSecretaria3">
-                          <i class="bi bi-pencil-square me-2"></i> Certificado para requerimiento al Tribunal Constitucional
-                        </button>
-                      </h2>
-                      <div id="collapseSecretaria3" class="accordion-collapse collapse" aria-labelledby="headingSecretaria3" data-bs-parent="#accordionSecretaria">
-                        <div class="accordion-body text-start">
-                          <p>
-                            1.- Presentando solicitud en la Oficina Judicial Virtual (<a href="https://oficinajudicialvirtual.pjud.cl/home/index.php">OJV</a>)
-                          </p>
-                          <p>
-                            2.- Enviar correo electrónico a la casilla
-                            <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a>
-                            con copia a
-                            <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>
-                            indicando nombre del solicitante y rol de la causa.
-                          </p>
-                          <p>
-                            3.- Vía WhatsApp al número
-                            <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">
-                              <i class="bi bi-whatsapp"></i> +56 9 77061446
-                            </a>
-                            , indicando nombre del solicitante y rol de la causa, dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM)
-                          </p>
+                    
+                    <div class="modal fade" id="modalCertificado" tabindex="-1" aria-labelledby="modalCertificadoLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalCertificadoLabel">Solicitar Certificado de queja</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <p>
+                               1.- Presentando solicitud en Oficina Judicial Virtual (<a href="https://oficinajudicialvirtual.pjud.cl/home/index.php">OJV</a>)
+                            </p>
+                            <p>
+                              2.- Enviar correo electrónico a la casilla
+                              <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a>
+                              con copia a
+                              <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>
+                              indicando nombre del solicitante y rol de la causa, dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
+                            </p>
+                            <p>
+                              3.- Vía WhatsApp al número
+                              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">
+                                <i class="bi bi-whatsapp"></i> +56 9 77061446
+                              </a>
+                              dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                  </div> 
+
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Certificado para requerimiento al Tribunal Constitucional</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalRequerimiento">
+                              <i class="fa fa-address-card"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="modal fade" id="modalRequerimiento" tabindex="-1" aria-labelledby="modalRequerimientoLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalRequerimientoLabel">Certificado para requerimiento al Tribunal Constitucional</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <p>
+                               1.- Presentando solicitud en Oficina Judicial Virtual (<a href="https://oficinajudicialvirtual.pjud.cl/home/index.php">OJV</a>)
+                            </p>
+                            <p>
+                              2.- Enviar correo electrónico a la casilla
+                              <a href="mailto:jvio@pjud.cl">jvio@pjud.cl</a>
+                              con copia a
+                              <a href="mailto:fsalman@pjud.cl">fsalman@pjud.cl</a>
+                              indicando nombre del solicitante y rol de la causa, dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
+                            </p>
+                            <p>
+                              3.- Vía WhatsApp al número
+                              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm">
+                                <i class="bi bi-whatsapp"></i> +56 9 77061446
+                              </a>
+                              dentro del horario de atención (lunes a viernes desde las 08:00 AM a las 14:00 PM).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                   
+
+                   
                 </div> 
               </div> 
             </div> 
