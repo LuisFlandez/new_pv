@@ -956,25 +956,39 @@
                   </div>
                   
                   <div class="col-sm-7">
-                    <div class="accordion shadow" id="accordionDiario">
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Edictos</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalEdictos">
+                              <i class="fa fa-info me-2"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                       
-                      <div class="accordion-item rounded-0">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdictos"
-                            aria-expanded="true" aria-controls="collapseEdictos">
-                            <i class="fa fa-info me-2"></i> Edictos
-                          </button>
-                        </h2>
-                        <div id="collapseEdictos" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body p-0">
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="modal fade" id="modalEdictos" tabindex="-1" aria-labelledby="modalEdictosLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalEdictosLabel">Edictos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Edicto Apertura concurso Relator Titular
                                 <div>
                                   Visible hasta: Miércoles 31 de Diciembre
                                   <a href="docs/edic1.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
                                 </div>
                               </li>
+                              <hr>
                               <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Edicto apertura concurso Juez(a) Juzgado de Familia de Osorno
                                 <div>
@@ -982,6 +996,7 @@
                                   <a href="docs/edic2.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
                                 </div>
                               </li>
+                              <hr>
                               <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Edicto apertura concurso Juez(a) Tribunal de Juicio Oral en lo Penal de Valdivia
                                 <div>
@@ -989,6 +1004,7 @@
                                   <a href="docs/edic3.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
                                 </div>
                               </li>
+                              <hr>
                               <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Edicto apertura concurso Procurador del Número de Osorno
                                 <div>
@@ -996,6 +1012,7 @@
                                   <a href="docs/edic4.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
                                 </div>
                               </li>
+                              <hr>
                               <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Apertura concurso de Juez(a) Juzgado de Garantía de Mariquina
                                 <div>
@@ -1003,27 +1020,59 @@
                                   <a href="docs/edic5.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver edicto</a>
                                 </div>
                               </li>
-                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     
+                      
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Reajuste de Cuantías</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalCuantias">
+                              <i class="bi bi-coin"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="modal fade" id="modalCuantias" tabindex="-1" aria-labelledby="modalCuantiasLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                          <div class="modal-content">
+                            
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalCuantiasLabel">Reajuste de Cuantías</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                              <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  <div class="accordion-body">
+                                    Acta N° 31-2025 sobre reajuste de cuantías<br>
+                                    Visible hasta: Miércoles 31 de Diciembre
+                                    <a href="docs/act1.pdf" class="btn btn-danger btn-sm ms-3">
+                                      <i class="bi bi-file-pdf"></i> Ver Acta
+                                    </a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            
                           </div>
                         </div>
                       </div>
 
-                      
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#cuantias" aria-expanded="false" aria-controls="cuantias">
-                            <i class="bi bi-coin"></i> Reajuste de Cuantías
-                          </button>
-                        </h2>
-                         <div id="cuantias" class="accordion-collapse collapse" data-bs-parent="#accordionMural">
-                          <div class="accordion-body">
-                            Acta N° 31-2025 sobre reajuste de cuantías<br>
-                            Visible hasta: Miércoles 31 de Diciembre
-                            <a href="docs/act1.pdf" class="btn btn-danger btn-sm ms-3"><i class="bi bi-file-pdf"></i> Ver Acta</a>
-                          </div>
-                        </div>
-                      </div>
+                    
 
                      
                       <div class="accordion-item">
