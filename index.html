@@ -466,7 +466,7 @@
                             <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
                               data-bs-toggle="modal" 
                               data-bs-target="#modalPatrocinioPoder">
-                              <i class="fa fa-address-card"></i>
+                              <i class="bi bi-file-text-fill"></i>
                               Ver más
                             </a>
                           </div>
@@ -512,7 +512,7 @@
                             <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
                               data-bs-toggle="modal" 
                               data-bs-target="#modalCertificado">
-                              <i class="fa fa-address-card"></i>
+                              <i class="bi bi-file-text-fill"></i>
                               Ver más
                             </a>
                           </div>
@@ -562,7 +562,7 @@
                             <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
                               data-bs-toggle="modal" 
                               data-bs-target="#modalRequerimiento">
-                              <i class="fa fa-address-card"></i>
+                              <i class="bi bi-file-text-fill"></i>
                               Ver más
                             </a>
                           </div>
@@ -629,20 +629,34 @@
                 </div>
 
                 <div class="col-sm-7">
-                  <div class="accordion shadow border-top border-success border-4" id="accordionPostulantes">
+                  
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Nómina de Postulantes e Instrucciones para oír alegatos</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalNominaPostulantes">
+                              <i class="bi bi-list-check me-2"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                    
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingNomina">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseNomina" aria-expanded="false" aria-controls="collapseNomina">
-                          <i class="bi bi-list-check me-2"></i> Nómina de Postulantes e Instrucciones para oír alegatos
-                        </button>
-                      </h2>
-                      <div id="collapseNomina" class="accordion-collapse collapse" aria-labelledby="headingNomina"
-                        data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body text-start">
-                          <strong>INSTRUCCIONES</strong><br><br>
+                    <div class="modal fade" id="modalNominaPostulantes" tabindex="-1" aria-labelledby="modalNominaPostulantesLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalNominaPostulantesLabel">Nómina de Postulantes e Instrucciones para oír alegatos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <strong>INSTRUCCIONES</strong><br><br>
                           - Incorporarse a la sala de audiencia 5 minutos antes de las 9:00.<br>
                           - Individualizados con su nombre y señalizando su calidad de postulante.<br>
                           - Ingresar a la audiencia desde un dispositivo electrónico y mantener cámara encendida.<br>
@@ -654,58 +668,91 @@
                             class="btn btn-outline-primary w-100 text-start mb-2">
                             <i class="bi bi-file-earmark-spreadsheet"></i> Ver nómina
                           </a>
+                          </div>
                         </div>
                       </div>
                     </div>
 
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Indicaciones para la redacción del documento "Certificado de Alegatos"</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalAlegatos">
+                              <i class="bi bi-info-lg me-2"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingCertificado">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseCertificado" aria-expanded="false" aria-controls="collapseCertificado">
-                          <i class="bi bi-info-lg me-2"></i> Indicaciones para la redacción del documento "Certificado de Alegatos"
-                        </button>
-                      </h2>
-                      <div id="collapseCertificado" class="accordion-collapse collapse" aria-labelledby="headingCertificado"
-                        data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body text-start">
-                          <p><strong>Fuente:</strong> Calibri<br>
-                            <strong>Tamaño fuente:</strong> 11<br>
-                            <strong>Interlineado:</strong> 1.5<br>
-                            <strong>Texto:</strong> Justificado
-                          </p>
-                          <h6>Ejemplo:</h6>
-                          <p>
-                            Causa rol: <em>123-2023 civil</em><br>
-                            Relator: <em>Alejando Clunes</em><br>
-                            Caratulado: <em>Garcia / Jiménez</em><br>
-                            Abogados: <em>Rodrigo González - Paula Salas</em><br>
-                            Materia: <em>Honorarios, cobro de (en juicio)</em><br>
-                            Sala: <em>Primera</em>
-                          </p>
-                          <a href="docs/plantilla_postulante.doc" target="_blank" class="btn btn-outline-primary text-start mb-2">
-                            <img src="img/word.png" width="40" alt="word"></img> Descargar plantilla de Certificado de Alegatos (Word)
-                          </a>
-                          <p class="mt-3">
-                            Una vez escuchados todos los alegatos que le han sido indicados por la Corporación de Asistencia Judicial. Enviar el o los documentos en un solo correo electrónico (formato Word) a la dirección
-                            <a href="mailto:postulantes_cavaldivia@pjud.cl">postulantes_cavaldivia@pjud.cl</a>, indicando en el asunto del mismo “Certificación de alegatos” .
-                          </p>
+                    <div class="modal fade" id="modalAlegatos" tabindex="-1" aria-labelledby="modalAlegatosLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalAlegatosLabel">Indicaciones para la redacción del documento "Certificado de Alegatos"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <p><strong>Fuente:</strong> Calibri<br>
+                              <strong>Tamaño fuente:</strong> 11<br>
+                              <strong>Interlineado:</strong> 1.5<br>
+                              <strong>Texto:</strong> Justificado
+                            </p>
+                            <h6>Ejemplo:</h6>
+                            <p>
+                              Causa rol: <em>123-2023 civil</em><br>
+                              Relator: <em>Alejando Clunes</em><br>
+                              Caratulado: <em>Garcia / Jiménez</em><br>
+                              Abogados: <em>Rodrigo González - Paula Salas</em><br>
+                              Materia: <em>Honorarios, cobro de (en juicio)</em><br>
+                              Sala: <em>Primera</em>
+                            </p>
+                            <a href="docs/plantilla_postulante.doc" target="_blank" class="btn btn-outline-primary text-start mb-2">
+                              <img src="img/word.png" width="40" alt="word"></img> Descargar plantilla de Certificado de Alegatos (Word)
+                            </a>
+                            <p class="mt-3">
+                              Una vez escuchados todos los alegatos que le han sido indicados por la Corporación de Asistencia Judicial. Enviar el o los documentos en un solo correo electrónico (formato Word) a la dirección
+                              <a href="mailto:postulantes_cavaldivia@pjud.cl">postulantes_cavaldivia@pjud.cl</a>, indicando en el asunto del mismo “Certificación de alegatos” .
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingExpediente">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseExpediente" aria-expanded="false" aria-controls="collapseExpediente">
-                          <i class="bi bi-journal-text me-2"></i> Procedimiento para abrir expediente de título
-                        </button>
-                      </h2>
-                     <div id="collapseExpediente" class="accordion-collapse collapse"
-                        aria-labelledby="headingExpediente" data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body">
-                          <div class="col-3">
+                   
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Procedimiento para abrir expediente de título</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalExpediente">
+                              <i class="bi bi-journal-text me-2"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade" id="modalExpediente" tabindex="-1" aria-labelledby="modalExpedienteLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalExpedienteLabel">Procedimiento para abrir expediente de título</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                            <div class="col-3">
                             <h6>Paso N°1</h6>
                           </div>
                           <div class="row">
@@ -791,22 +838,38 @@
                             Seguimiento de estado
                           </a>
                           <p>Para más información escribe a: <a href="mailto:contacto@pjud.cl">contacto@pjud.cl</a></p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
+                   <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Preguntas frecuentes</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalPreguntas">
+                              <i class="bi bi-question-circle-fill me-2"></i>
+                              Ver más
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     
-                    <div class="accordion-item rounded-0">
-                      <h2 class="accordion-header" id="headingFAQ">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseFAQ" aria-expanded="false" aria-controls="collapseFAQ">
-                          <i class="bi bi-question-circle-fill me-2"></i> Preguntas frecuentes
-                        </button>
-                      </h2>
-                      <div id="collapseFAQ" class="accordion-collapse collapse" aria-labelledby="headingFAQ"
-                        data-bs-parent="#accordionPostulantes">
-                        <div class="accordion-body text-start">
-                           <div class="mb-3">
+                    <div class="modal fade" id="modalPreguntas" tabindex="-1" aria-labelledby="modalPreguntasLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lm modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalPreguntasLabel">Indicaciones para la redacción del documento "Certificado de Alegatos"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body text-start">
+                          <div class="mb-3">
                             <button class="btn btn-outline-primary w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#collapseExample1">
                               ¿Soy postulante en práctica y debo ver alegatos, a quién debo avisar para poder ingresar a una reunión?
                             </button>
@@ -851,11 +914,16 @@
                               </div>
                             </div>
                           </div>
+
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                  </div>
+                    
+                      
+
+                  
                 </div>
               </div>
             </div>
