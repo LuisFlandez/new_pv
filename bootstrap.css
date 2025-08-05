@@ -197,6 +197,10 @@
   border-color: var(--bs-btn-border-color);
 }
 
+.header-principal {
+  background-color: #5f83bb;
+  color: #fff;
+}
 
 
 *,
