@@ -491,7 +491,7 @@
                     <div class="modal fade" id="modalPatrocinioPoder" tabindex="-1" aria-labelledby="modalPatrocinioPoderLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalPatrocinioPoderLabel">Autorización de patrocinio y poder</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -537,7 +537,7 @@
                     <div class="modal fade" id="modalCertificado" tabindex="-1" aria-labelledby="modalCertificadoLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalCertificadoLabel">Solicitar Certificado de queja</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -587,7 +587,7 @@
                     <div class="modal fade" id="modalRequerimiento" tabindex="-1" aria-labelledby="modalRequerimientoLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalRequerimientoLabel">Certificado para requerimiento al Tribunal Constitucional</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -663,7 +663,7 @@
                     <div class="modal fade" id="modalNominaPostulantes" tabindex="-1" aria-labelledby="modalNominaPostulantesLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalNominaPostulantesLabel">Nómina de Postulantes e Instrucciones para oír alegatos</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -706,7 +706,7 @@
                     <div class="modal fade" id="modalAlegatos" tabindex="-1" aria-labelledby="modalAlegatosLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalAlegatosLabel">Indicaciones para la redacción del documento "Certificado de Alegatos"</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -759,7 +759,7 @@
                     <div class="modal fade" id="modalExpediente" tabindex="-1" aria-labelledby="modalExpedienteLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalExpedienteLabel">Procedimiento para abrir expediente de título</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -876,7 +876,7 @@
                     <div class="modal fade" id="modalPreguntas" tabindex="-1" aria-labelledby="modalPreguntasLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lm modal-dialog-scrollable">
                         <div class="modal-content">
-                          <div class="modal-header">
+                          <div class="modal-header header-principal">
                             <h5 class="modal-title" id="modalPreguntasLabel">Indicaciones para la redacción del documento "Certificado de Alegatos"</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
@@ -1311,83 +1311,82 @@
                 <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
                   <div class="mb-4 w-75">
 
-                    
-                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0"
-                        style="max-width: 540px; cursor: pointer;"
-                        data-bs-toggle="modal" data-bs-target="#modalAbogado">
-                      <div class="row">
-                        <div class="col-md-4 d-flex justify-content-center">
-                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono abogado" width="500" height="500">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="mb-0 align-items-center">
-                              <i class="bi bi-person-fill"></i> Soy Abogado
-                            </h5>
-                            <p class="card-text mb-0">
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <h5 class="card-title mb-1">Soy Abogado</h5>
                               <small>Puedes presentar recursos de amparo o protección en la Oficina Judicial Virtual o en la Corte de Apelaciones.</small>
-                            </p>
-                            <div class="text-end">
-                              <button class="btn btn-sm btn-primary mt-4 mb-0 opacity-75">Ver medios</button>
+                            </div>
+                            <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                              <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalAbogado">
+                                <i class="bi bi-person-fill me-2"></i>
+                                Ver más
+                              </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    
-                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0"
-                        style="max-width: 540px; cursor: pointer;"
-                        data-bs-toggle="modal" data-bs-target="#modalNoAbogado">
-                      <div class="row">
-                        <div class="col-md-4 d-flex justify-content-center">
-                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono abogado" width="500" height="500">
+                
+                    <div class="modal fade" id="modalAbogado" tabindex="-1" aria-labelledby="modalAbogadoLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xg modal-dialog-scrollable">
+                          <div class="modal-content shadow-lg border-0 rounded-3">
+                            <div class="modal-header header-principal">
+                              <h5 class="modal-title" id="modalAbogadoLabel">
+                                <i class="bi bi-file-earmark-text me-2"></i> Información para Abogados
+                              </h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+
+                            <div class="modal-body bg-light">
+                              <ul class="list-group list-group-flush">
+                                Se advierte que el ingreso de demandas, escritos y documentos recibidos por correo electrónico para causas
+                                ingresadas a contar del día 18 de junio de 2016, se deberá realizar en la oficina judicial
+                                (<a target="_blank" href="https://oficinajudicialvirtual.pjud.cl/home/index.php">oficinajudicialvirtual.pjud.cl</a>)
+                                de acuerdo a lo señalado en los artículos 5° y 6° de la Ley N°20.886 y artículo 3° del Acta 37-2016. 
+                                Se prescindirá la presentación del correo electrónico al tribunal con el fin de evitar la doble tramitación. 
+                                Por lo que estos deberá ingresar únicamente por la Oficina Judicial Virtual (OJV).
+
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="mb-0 align-items-center">
-                              <i class="bi bi-person-fill"></i> No soy abogado
-                            </h5>
-                            <p class="card-text mb-0">
+                      </div>          
+                           
+                    
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <h5 class="card-title mb-1">No soy Abogado</h5>
                               <small>Puedes acudir a la Corte de Apelaciones para presentar tu recurso.</small>
-                            </p>
-                            <div class="text-end">
-                              <button class="btn btn-sm btn-primary mt-4 opacity-75">Ver medios</button>
+                            </div>
+                            <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                              <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalNoAbogado">
+                                <i class="bi bi-person-fill me-2"></i>
+                                Ver más
+                              </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
                   </div>
                 </div>
               </div>
 
               
-              <div class="modal fade" id="modalAbogado" tabindex="-1" aria-labelledby="modalAbogadoLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalAbogadoLabel">Información para abogados</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body text-start">
-                      Se advierte que el ingreso de demandas, escritos y documentos recibidos por correo electrónico para causas
-                      ingresadas a contar del día 18 de junio de 2016, se deberá realizar en la oficina judicial
-                      (<a target="_blank" href="https://oficinajudicialvirtual.pjud.cl/home/index.php">oficinajudicialvirtual.pjud.cl</a>)
-                      de acuerdo a lo señalado en los artículos 5° y 6° de la Ley N°20.886 y artículo 3° del Acta 37-2016. 
-                      Se prescindirá la presentación del correo electrónico al tribunal con el fin de evitar la doble tramitación. 
-                      Por lo que estos deberá ingresar únicamente por la Oficina Judicial Virtual (OJV).
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              
 
               <div class="modal fade" id="modalNoAbogado" tabindex="-1" aria-labelledby="modalNoAbogadoLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                   <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header header-principal">
                       <h5 class="modal-title" id="modalNoAbogadoLabel">Modalidades de presentación</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
