@@ -278,7 +278,6 @@
                 </div>
               </div>
             </div>
-
             
             <div class="mt-3 py-4 d-none tab-info" id="atencion_publico">
               <div class="row">
@@ -288,165 +287,179 @@
                 <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
                   <div class="mb-4 w-75">
                     
-                    
-                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
-                        data-bs-toggle="modal" data-bs-target="#modalICAValdivia">
-                      <div class="row">
-                        <div class="col-md-4 d-flex  justify-content-center ">
-                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono atencion telefonica" width="500" height="500">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="mb-0 align-items-center">
-                              <i class="bi bi-person-fill"></i>
-                              Atención telefónica:
-                            </h5>
-                            <p class="card-text mb-0">
-                              <small>Alternativas para ser atendido vía telefónica.</small>
-                            </p>
-                            <div class="text-end">
-                              <button class="btn btn-sm btn-primary mt-4 opacity-75">Ver medios</button>
-                            </div>
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Atención telefónica:</h5>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="modal fade" id="modalICAValdivia" tabindex="-1" aria-labelledby="modalICAValdiviaLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="modalICAValdiviaLabel">Tipos de atención de público ICA Valdivia</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                          </div>
-                          <div class="modal-body text-start">
-
-                            <h6 class="fw-bold">Central telefónica</h6>
-                            <ul>
-                              <li>Estados de sus causas</li>
-                              <li>Nombramientos</li>
-                              <li>Proceso de entrega de cheques</li>
-                              <li>Correos para presentar recursos</li>
-                              <li>O.J.V.</li>
-                            </ul>
-                            <div class="d-flex gap-2 mb-3">
-                              <a href="tel:+56632266400" class="btn btn-primary btn-sm bi bi-telephone-forward">
-                                Llamar a la mesa central +56 63 2266400
-                              </a>
-                              <a href="tel:+56963639110" class="btn btn-primary btn-sm bi bi-telephone-forward">
-                                Llamar a la mesa central +56 9 63639110
-                              </a>
-                            </div>
-
-                            <h6 class="fw-bold">Atención por Zoom</h6>
-                            <p class="fw-semibold">Abogados:</p>
-                            <ul>
-                              <li>Funcionamiento de Sala Virtual (forma en que comunican turno con alegato, forma de anunciarse, conocer resultados, etc.)</li>
-                              <li>Tiempo de tramitación de causas, tiempo que demoran en resolver.</li>
-                              <li>Coordinación de alegatos al tener causas en Salas distintas.</li>
-                            </ul>
-
-                            <p class="fw-semibold">Atención de usuarios:</p>
-                            <ul>
-                              <li>Estados de sus causas</li>
-                              <li>Nombramientos</li>
-                              <li>Proceso de entrega de cheques</li>
-                              <li>Presentación de recursos</li>
-                              <li>O.J.V.</li>
-                            </ul>
-                            <a href="https://zoom.us/j/99596962879#success" class="btn btn-primary btn-sm mb-3 bi bi-camera-video">
-                              Atención de público virtual (Zoom)
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalTelefonica">
+                              <i class="bi bi-telephone-inbound-fill"></i>
+                              Ver más
                             </a>
-
-                            <h6 class="fw-bold mt-3">Secretario</h6>
-                            <ul>
-                              Atención de abogados y usuarios institucionales:
-                              <li>Autorización de patrocinio y poder (Hasta las 16:00 horas.)</li>
-                              <li>Causas agregadas penales 149 del Código Procesal Penal.</li>
-                              <li>Amparos.</li>
-                            </ul>
-                            <div class="d-flex gap-2">
-                              <a href="https://wa.me/56977061446" class="btn btn-success btn-sm bi bi-whatsapp"> WhatsApp</a>
-                              <a href="tel:+56977061446" class="btn btn-primary btn-sm bi bi-telephone-forward"> +569 77061446</a>
-                            </div>
-
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="card mb-3 shadow hover-grow border-0 border-end border-4 border-info rounded-0" style="max-width: 540px; cursor: pointer;" 
-                        data-bs-toggle="modal" data-bs-target="#modalCorreo">
-                      <div class="row">
-                        <div class="col-md-4 d-flex  justify-content-center ">
-                          <img src="img/j_lic3.jpg" class="img-fluid" alt="icono atencion telefonica" width="450" height="450">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="mb-0">
-                              <i class="bi bi-envelope-fill"></i>
-                              Atención vía correo electrónico:
+                      
+                    <div class="modal fade" id="modalTelefonica" tabindex="-1" aria-labelledby="modalTelefonicaLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xm modal-dialog-scrollable">
+                        <div class="modal-content shadow-lg border-0 rounded-3">
+                          <div class="modal-header header-principal">
+                            <h5 class="modal-title" id="modalTelefonicaLabel">
+                              <i class="bi bi-file-earmark-text me-2"></i>
+                              Tipos de atención de público ICA Valdivia
                             </h5>
-                            <p class="card-text mb-0">
-                              <small>Alternativas para ser atendido vía correos institucionales.</small>
-                            </p>
-                            <div class="text-end">
-                              <button class="btn btn-sm btn-primary mt-3 opacity-75">Ver medios</button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+                          <div class="modal-body bg-light text-start">
+                            <div class="card shadow-sm mb-4">
+                              <div class="card-header bg-dark opacity-50 text-white fw-bold">
+                                <i class="bi bi-telephone-fill me-2"></i> Central telefónica
+                              </div>
+                              <div class="card-body text-start">
+                                <ul class="mb-3">
+                                  <li>Estados de sus causas</li>
+                                  <li>Nombramientos</li>
+                                  <li>Proceso de entrega de cheques</li>
+                                  <li>Correos para presentar recursos</li>
+                                  <li>O.J.V.</li>
+                                </ul>
+                                <div class="d-flex flex-wrap gap-2">
+                                  <a href="tel:+56632266400" class="btn btn-primary btn-sm bi bi-telephone-forward">
+                                    Llamar a la mesa central +56 63 2266400
+                                  </a>
+                                  <a href="tel:+56963639110" class="btn btn-primary btn-sm bi bi-telephone-forward">
+                                    Llamar a la mesa central +56 9 63639110
+                                  </a>
+                                </div>
+                              </div>
                             </div>
+                            <div class="card shadow-sm mb-4">
+                              <div class="card-header bg-dark opacity-50 text-white fw-bold">
+                                <i class="bi bi-camera-video-fill me-2"></i> Atención por Zoom
+                              </div>
+                              <div class="card-body text-start">
+                                <p class="fw-semibold mb-1">Abogados:</p>
+                                <ul class="mb-3">
+                                  <li>Funcionamiento de Sala Virtual (forma de anunciarse, turnos, resultados, etc.)</li>
+                                  <li>Tiempo de tramitación de causas y resolución</li>
+                                  <li>Coordinación de alegatos en Salas distintas</li>
+                                </ul>
+                                <p class="fw-semibold mb-1">Atención de usuarios:</p>
+                                <ul class="mb-3">
+                                  <li>Estados de sus causas</li>
+                                  <li>Nombramientos</li>
+                                  <li>Proceso de entrega de cheques</li>
+                                  <li>Presentación de recursos</li>
+                                  <li>O.J.V.</li>
+                                </ul>
+                                <a href="https://zoom.us/j/99596962879#success" class="btn btn-primary btn-sm bi bi-camera-video">
+                                  Atención de público virtual (Zoom)
+                                </a>
+                              </div>
+                            </div>
+                            <div class="card shadow-sm mb-2">
+                              <div class="card-header bg-dark opacity-50 text-white fw-bold">
+                                <i class="bi bi-person-badge-fill me-2"></i> Secretario
+                              </div>
+                              <div class="card-body text-start">
+                                <p class="fw-semibold mb-1">Atención de abogados y usuarios institucionales:</p>
+                                <ul class="mb-3">
+                                  <li>Autorización de patrocinio y poder (hasta las 16:00 horas)</li>
+                                  <li>Causas agregadas penales 149 del Código Procesal Penal</li>
+                                  <li>Amparos</li>
+                                </ul>
+                                <div class="d-flex flex-wrap gap-2">
+                                  <a href="https://wa.me/56977061446" class="btn btn-success btn-sm bi bi-whatsapp"> WhatsApp</a>
+                                  <a href="tel:+56977061446" class="btn btn-primary btn-sm bi bi-telephone-forward"> +56 9 77061446</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                     
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h5 class="card-title mb-1">Atención vía correo electrónico:</h5>
+                          </div>
+                          <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                            <a class="btn rounded-0 shadow btn-dark w-100 opacity-75" 
+                              data-bs-toggle="modal" 
+                              data-bs-target="#modalCorreo">
+                              <i class="bi bi-envelope-arrow-down-fill"></i>
+                              Ver más
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
+
 
                     <div class="modal fade" id="modalCorreo" tabindex="-1" aria-labelledby="modalCorreoLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="modalCorreoLabel">Tipos de atención vía correo electrónico</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content shadow-lg border-0 rounded-3">
+                          <div class="modal-header header-principal">
+                            <h5 class="modal-title" id="modalCorreoLabel">
+                              <i class="bi bi-envelope-fill me-2"></i> Correos de Contacto
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                           </div>
                           <div class="modal-body text-start">
-
-                            <a href="mailto:ca_valdivia@pjud.cl" id="btncorreo1" class="btn btn-principal btn-sm w-50 rounded-10 shadow border-0 border-start">
+                            <a href="mailto:ca_valdivia@pjud.cl" id="btncorreo1"
+                              class="btn btn-principal btn-sm w-50 rounded-3 shadow border-0 border-start mb-3">
                               <i class="bi bi-envelope-arrow-down"></i> ca_valdivia@pjud.cl
                             </a>
-                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                            <p style="text-align: justify;">
-                              <i>Recepción de <b>solicitudes o presentaciones no relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
+                            <h6 class="card-text mt-2"><u>Objetivo del uso correcto</u></h6>
+                            <p class="mb-3">
+                              <i>Recepción de <b>solicitudes o presentaciones no relacionadas con causas o recursos</b>
+                                para tramitar, en tramitación o que ya fueron fallados.</i>
                             </p>
                             <hr>
-
-                            <a href="mailto:admcausas_ca_valdivia@pjud.cl" id="btncorreo2" class="btn btn-principal btn-sm w-50 rounded-10 shadow border-0 border-start">
+                            <a href="mailto:admcausas_ca_valdivia@pjud.cl" id="btncorreo2"
+                              class="btn btn-principal btn-sm w-50 rounded-3 shadow border-0 border-start mb-3">
                               <i class="bi bi-envelope-arrow-down"></i> admcausas_ca_valdivia@pjud.cl
                             </a>
-                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                            <p style="text-align: justify;">
-                              <i>Recepción de <b>solicitudes o presentaciones relacionadas con causas o recursos</b> para tramitar, en tramitación o que ya fueron fallados.</i>
+                            <h6 class="card-text mt-2"><u>Objetivo del uso correcto</u></h6>
+                            <p class="mb-3">
+                              <i>Recepción de <b>solicitudes o presentaciones relacionadas con causas o recursos</b>
+                                para tramitar, en tramitación o que ya fueron fallados.</i>
                             </p>
                             <hr>
-
-                            <a href="mailto:presidencia_cavaldivia@pjud.cl" id="btncorreo3" class="btn btn-principal btn-sm w-50 rounded-10 shadow border-0 border-start">
+                            <a href="mailto:presidencia_cavaldivia@pjud.cl" id="btncorreo3"
+                              class="btn btn-principal btn-sm w-50 rounded-3 shadow border-0 border-start mb-3">
                               <i class="bi bi-envelope-arrow-down"></i> presidencia_cavaldivia@pjud.cl
                             </a>
-                            <h6 class="card-text mt-3"><u>Objetivo del uso correcto</u></h6>
-                            <p style="text-align: justify;">
+                            <h6 class="card-text mt-2"><u>Objetivo del uso correcto</u></h6>
+                            <p class="mb-2">
                               <i>Solicitud de audiencia con el Sr. Presidente de la ILTMA. Corte de Apelaciones.</i>
                             </p>
-                            <p style="text-align: justify;">
-                              <i>En la solicitud se deberá adjuntar los datos del solicitante y/o representante, materia a tratar, día y hora propuesta y un número de contacto.</i>
+                            <p>
+                              <i>En la solicitud se deberá adjuntar los datos del solicitante y/o representante, materia a tratar,
+                                día y hora propuesta y un número de contacto.</i>
                             </p>
-
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    
+
+                    
 
                   </div>
                 </div>
               </div>
             </div>
-
-            
+      
             <div class="mt-3 py-4 d-none tab-info" id="secretaria">
               <div class="row">
                 <div class="col-sm-5">
@@ -607,8 +620,7 @@
                 </div> 
               </div> 
             </div> 
-
-          
+        
             <div class="mt-3 py-4 d-none tab-info" id="atencion_postulantes">
               <div class="row">
                 <div class="col-sm-5">
@@ -927,7 +939,6 @@
                 </div>
               </div>
             </div>
-
 
             <div class="mt-3 py-4 d-none tab-info" id="diario_mural">
                 <div class="row">
@@ -1288,14 +1299,8 @@
 
                   </div>
                 </div>
-              </div>
+              
             </div>
-
-
-            
-        
-            </div>
-
 
             <div class="mt-3 py-4 d-none tab-info" id="interponer_recurso">
               <div class="row">
@@ -1443,8 +1448,7 @@
         
         
             </div> 
-      
-            
+           
             <div class="mt-3 py-4 d-none tab-info" id="buzon">
                 <div class="row">
                   <div class="col-md-7">
@@ -1474,9 +1478,7 @@
                     </div>
                   </div>
                 
-            </div>      
-      
-      
+            </div>            
       
       
         </div>
