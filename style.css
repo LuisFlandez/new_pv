@@ -124,3 +124,21 @@ img {
   color: #fff !important;
 }
 
+
+.titulo-subrayado {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.titulo-subrayado::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* separación entre texto y subrayado */
+  transform: translateX(-50%);
+  width: 75%; /* ancho del subrayado (puedes modificarlo) */
+  height: 2.5px; /* grosor del subrayado */
+  background-color: #5f83bb; /* color del subrayado */
+  border-radius: 0px;
+}
