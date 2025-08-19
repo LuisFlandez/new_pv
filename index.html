@@ -287,19 +287,138 @@
                           </div>
                         </div>
                       </div>
-                      <div class="modal fade" id="modalSalas" tabindex="-1" aria-labelledby="modalSalasLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                          <div class="modal-content">
-                            <div class="modal-header header-principal">
-                              <h5 class="modal-title" id="modalSalasLabel">Salas de audiencia disponibles</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Próximamente se habilitará el acceso a las salas de Zoom.</p>
+                     <div class="modal fade" id="modalSalas" tabindex="-1" aria-labelledby="modalSalasLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-content rounded-4 overflow-hidden">
+                          <div class="modal-header header-principal border-0">
+                            <h5 class="modal-title fw-semibold" id="modalSalasLabel">Salas de audiencia disponibles</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                          </div>
+
+                          <div class="modal-body p-0">
+                            <!-- Fondo tenue para el cuerpo del modal -->
+                            <div class="p-3 p-sm-4 modal-body-soft">
+                              <div class="container-fluid">
+                                <div class="row g-4">
+
+                                  <!-- Columna izquierda -->
+                                  <div class="col-sm-6">
+                                    <!-- Aviso principal -->
+                                    <div class="card shadow-sm rounded-4 border-0 mb-3">
+                                      <div class="card-body">
+                                        <p class="card-text text-center mb-0">
+                                          <b>LAS SALAS DE AUDIENCIA DE LA CORTE DE APELACIONES DE VALDIVIA SE ENCUENTRAN DISPONIBLES PARA QUE LOS ABOGADOS Y ABOGADAS PUEDAN ALEGAR DE MANERA PRESENCIAL.</b>
+                                          <br><br>
+                                          En caso contrario deberán seguir las instrucciones que aquí se indican:
+                                        </p>
+                                      </div>
+                                    </div>
+
+                                    <!-- Ingreso a salas -->
+                                    <div class="card shadow-sm rounded-4 border-0 mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-center mb-1">Ingreso a salas de audiencias</h5>
+                                        <h6 class="card-subtitle mb-3 text-muted text-center">Enlaces de Zoom salas de audiencia ICA Valdivia</h6>
+
+                                        <p class="card-text text-danger small mb-4">
+                                          Al ingresar a la sala identifíquese con su Nombre, Apellido y Causa(s).<br>
+                                          <span class="fw-semibold">EJEMPLO:</span> Juan Perez 80-2020
+                                        </p>
+
+                                        <div class="row g-3">
+                                          <div class="col-sm-6 d-grid">
+                                            <a href="https://zoom.us/j/713624455" target="_blank" rel="noopener" class="btn btn-lg btn-primary rounded-3">
+                                              <i class="fa fa-video-camera me-2" aria-hidden="true"></i>
+                                              Unirse a la primera sala
+                                            </a>
+                                          </div>
+                                          <div class="col-sm-6 d-grid">
+                                            <a href="https://zoom.us/j/92436625937" target="_blank" rel="noopener" class="btn btn-lg btn-primary rounded-3">
+                                              <i class="fa fa-video-camera me-2" aria-hidden="true"></i>
+                                              Unirse a la segunda sala
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <!-- Contacto salas -->
+                                    <div class="card shadow-sm rounded-4 border-0">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-center mb-1">Consultas salas de audiencias</h5>
+                                        <h6 class="card-subtitle text-muted text-center">Contactos para atención de salas de audiencia</h6>
+
+                                        <div class="row mt-3 g-3">
+                                          <div class="col-sm-6">
+                                            <div class="bg-light rounded-3 p-3 text-center small fw-semibold">sala1_cavaldivia@pjud.cl</div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                            <div class="bg-light rounded-3 p-3 text-center small fw-semibold">sala2_cavaldivia@pjud.cl</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row mt-3 g-3 justify-content-center">
+                                          <div class="col-mg-6 col-md-5">
+                                            <div class="card shadow-sm rounded-4 border-0 h-100">
+                                              <div class="card-body text-center">
+                                                <p class="mb-3">Atención telefónica</p>
+                                                <a href="tel:56963639110" class="btn btn-secondary w-100 rounded-3">
+                                                  <i class="fa fa-phone me-2" aria-hidden="true"></i>
+                                                  Llamar a mesa central +56 63 226 6400
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  
+                                  <div class="col-sm-6">
+                                    <div class="card shadow-sm rounded-4 border-0 h-100">
+                                      <div class="card-body text-center px-4">
+                                        <p class="mb-3 fw-semibold">
+                                          Antes de ingresar a la sala de audiencia recuerde que:
+                                        </p>
+                                        <p class="mb-3">
+                                          <b>
+                                            La disponibilidad y correcto funcionamiento de los medios tecnológicos 
+                                            de las partes que comparezcan remotamente en dependencias ajenas al 
+                                            Poder Judicial será de su responsabilidad 
+                                            (inciso 5° Artículo 223 bis CPC).
+                                          </b>
+                                        </p>
+                                        <p class="mb-3">En consecuencia, es deber de cada parte:</p>
+
+                                        <ul class="list-group list-group-flush text-start mx-auto" style="max-width: 90%;">
+                                          <li class="list-group-item">
+                                            Mantener su cámara de video encendida desde el ingreso a la Sala Virtual y durante toda la vista de la causa.
+                                          </li>
+                                          <li class="list-group-item">
+                                            Conectarse desde un lugar <b>bien iluminado</b>, que permita la correcta visualización del litigante.
+                                          </li>
+                                          <li class="list-group-item">
+                                            Conectarse desde un lugar <b>ausente de ruidos molestos o interferencias</b>, que entorpezcan la adecuada escucha de sus alegaciones.
+                                          </li>
+                                          <li class="list-group-item">
+                                            En caso que la parte interesada no cumpliere oportunamente con su carga o no fuere posible contactarla luego de tres intentos a través de los medios ofrecidos, de lo cual se deberá dejar constancia, 
+                                            <b>se entenderá que ha renunciado a la prueba o, en su caso, que no ha comparecido</b> a la audiencia o alegato 
+                                            (art. 8° inciso 2°, Auto Acordado Sobre Audiencias y Vista de Causas por Videoconferencia).
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>                   
+                      </div>
+                    </div>
 
                 </div>
               </div>
