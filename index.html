@@ -1717,7 +1717,7 @@
 
           function acuerdosPleno() {
                 $.ajax({
-                    url: 'action.php',
+                    url: 'action_v2.php',
                     type: 'POST', 
                     data: {accion: '12' },
                     success: function(response) {
@@ -1732,7 +1732,7 @@
 
           function cuantias() {
                 $.ajax({
-                    url: 'action.php',
+                    url: 'action_v2.php',
                     type: 'POST', 
                     data: {accion: '10' },
                     success: function(response) {
@@ -1747,7 +1747,7 @@
 
             function obtenerFecha() {
                 $.ajax({
-                    url: 'action.php',
+                    url: 'action_v2.php',
                     type: 'POST', 
                     data: {accion: '11' },
                     success: function(response) {
@@ -1764,7 +1764,7 @@
 
             function obtenerEnlacesPDF() {
             $.ajax({
-                url: 'action.php',
+                url: 'action_v2.php',
                 type: 'POST',
                 data: {accion: '11'}, 
                 success: function(data) {
@@ -1783,7 +1783,7 @@
 
                     $.ajax({              
                         data:  datos,
-                        url:   'action.php',
+                        url:   'action_v2.php',
                         type:  'post',
                         beforeSend: function (){
                             $("#cuerpo_modal").html('<button class="btn btn-primary" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Cargando datos...</button>');
@@ -1800,7 +1800,7 @@
 
                     $.ajax({              
                         data:  datos,
-                        url:   'action.php',
+                        url:   'action_v2.php',
                         type:  'post',
                         beforeSend: function (){
                             $("#cuerpo_modal").html('<button class="btn btn-primary" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Cargando datos...</button>');
