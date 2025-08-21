@@ -136,7 +136,9 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                             </div>
                             <div class="modal-body">
-                              <div class="container-fluid" style="padding-top: 10px;">
+
+                              
+                              <div class="container-fluid"  id="verification-info"  style="padding-top: 10px;">
                                 <div class="row mb-3">
                                   <div class="col-sm-1"></div>
                                   <div class="col-sm-10">
@@ -202,30 +204,19 @@
                                   </div>
                                 </div>
                               </div>
+
+                              <div id="verification-result" class="text-center" style="display:none;">
+                                <div id="result-content"></div>
+                                <div class="mt-3">
+                                  <button type="button" class="btn btn-outline-dark" id="close-result">Cerrar</button>
+                                </div>
+                              </div>
+
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="modal" tabindex="-1" role="dialog" id="modal_info">
-                        <div class="modal-dialog modal-lg" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="titulo_modal"></h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="card mb-3 shadow" id="imagen">
-                                <div class="row no-gutters" id="cuerpo_modal">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
 
                       <div class="card rounded-0 border-0 border-start border-4 border-dark shadow mb-3 hover-grow">
@@ -1823,14 +1814,33 @@
                             data:  datos,
                             url:   'action_v2.php',
                             type:  'post',
-                            success:  function (response) {
+                            beforeSend: function () {
                                 $("#result").html('');
-                                $("#cuerpo_modal").html(response);
-                                $( "#modal_info" ).modal("show");
-                            }
+                                $("verificacion-info").hide();
+                                $("#result-content").html('<div class="d-flex justify-content-center my-5"><div class="spinner-border" role="status"></div></div>');
+                                $( "#verification-result" ).show();
+                            },
+                            success: function (response) {
+                              $("#result-content").html(response);
+                            }
                         })
                 }
             });
+            
+             $("#close-result").click(function() {
+                $("#verification-result").hide();
+                $("#result-content").html('');
+                $("#verification-info").show();
+            });
+
+            $('#modalVerificacion').on('hidden.bs.modal', function () {
+                $("#verification-result").hide();
+                $("#result-content").html('');
+                $("#verification-info").show();
+                $("#txtrut").val('');
+                $("#result").html('');
+            });
+
         </script>
 </body>
 
