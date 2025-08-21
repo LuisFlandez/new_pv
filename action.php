@@ -1,5 +1,6 @@
 <?php
 include ("conecta.php");
+//include ("../../conecta.php");
 function fechaCastellano ($fecha) 
 {
     $fecha = substr($fecha, 0, 10);
@@ -15,219 +16,7 @@ function fechaCastellano ($fecha)
     $nombreMes = str_replace($meses_EN, $meses_ES, $mes);
     return $nombredia." ".$numeroDia." de ".$nombreMes;
   }
-/*
-function digitadores (){
-    $mes=date('m');
 
-    if($mes == '01'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56961773682" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '02'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '03'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '04'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '05'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '06'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '07'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '08'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '09'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '10'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '11'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-    if($mes == '12'){
-        ?>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977244582" class="btn btn-success btn-block">
-                <i class="fa fa-whatsapp"></i>
-                Primera Sala
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://wa.me/56977246515" class="btn btn-success btn-block">
-            
-                <i class="fa fa-whatsapp"></i>
-                Segunda Sala
-            </a>
-        </div>
-        <?php
-    }
-}
-
-
-if ($_POST['accion'] == '1') {
-?>
-<div class="row">                    
-<?php digitadores();?>
-</div>
-<?php
-}
-*/
 if ($_POST['accion'] == '2') {
     ?>
 
@@ -323,68 +112,92 @@ if ($_POST['accion'] == '2') {
            
 <?php
 }
-if ($_POST['accion'] == '3') {
+$accion = isset($_POST['accion']) ? $_POST['accion'] : '';
+$rut    = isset($_POST['rut']) ? trim($_POST['rut']) : '';
 
-    $query=mysql_query("SELECT * FROM validacion_abogados WHERE rut = '".$_POST['rut']."' ", $link); 
+if ($accion === '3') {
 
-    if(mysql_num_rows($query) == 0){
+
+    $rut_esc = mysqli_real_escape_string($link, $rut);
+
+    $sql   = "SELECT * FROM validacion_abogados WHERE rut = '$rut_esc' LIMIT 1";
+    $query = mysqli_query($link, $sql);
+
+    if (!$query) {
+
+        die("Error en la consulta: " . mysqli_error($link));
+    }
+
+    if (mysqli_num_rows($query) === 0) {
         ?>
         <div class="col-md-4">
-            <img src="images/no-validado.png" class="card-img" alt="..." >
+            <img src="images/no-validado.png" class="card-img" alt="...">
         </div>
         <div class="col-md-8">
-            <div class="card-body" >
-                <h5 class="card-title">No existen datos asociados al rut</h5>
-                <p class="card-text">No existe validación de identidad al rut ingresado.</p>
-                
+            <div class="card-body">
+                <h5 class="card-title">No existen datos asociados al RUT</h5>
+                <p class="card-text">No existe validación de identidad al RUT ingresado.</p>
             </div>
         </div>
         <?php
-    }else{
-        $row=mysql_fetch_row($query);
-        $actual = date('Y-m-d');
-        if ($actual <= $row[6]) {
+    } else {
+
+        $row = mysqli_fetch_row($query);
+
+
+        $hoy        = date('Y-m-d');
+        $hoyTime    = strtotime($hoy);
+        $hastaTime  = strtotime($row[6]); 
+
+        if ($hastaTime !== false && $hoyTime <= $hastaTime) {
             ?>
             <div class="col-md-4">
-                <img src="images/validado.png" class="card-img" alt="..." >
+                <img src="images/validado.png" class="card-img" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body" style='background-image: url("images/corte_fondo.png");'>
-                    <h5 class="card-title"><?php echo $row[1]?></h5>
-                    <p class="card-text">Identidad validada correctamente, desde el <?php echo $row[5]?> hasta el <?php echo $row[6]?></p>
-                    <?php 
-                    if ($row[2] != "") {
-                        ?>
-                        <p class="card-text">Correo de contacto: <?php echo $row[2]?></p>
-                        <?php
-                    }
-                    ?>
-                    
-                    <p class="card-text text-center mt-5"><small class="text-muted">Validado por la unidad de atención de publico.<br>Ilustrisima Corte de Apelaciones de Valdivia</small></p>
-                    
+                    <h5 class="card-title"><?php echo htmlspecialchars($row[1]); ?></h5>
+                    <p class="card-text">
+                        Identidad validada correctamente, desde el
+                        <?php echo htmlspecialchars($row[5]); ?>
+                        hasta el
+                        <?php echo htmlspecialchars($row[6]); ?>
+                    </p>
+                    <?php if (!empty($row[2])) { ?>
+                        <p class="card-text">Correo de contacto: <?php echo htmlspecialchars($row[2]); ?></p>
+                    <?php } ?>
+                    <p class="card-text text-center mt-5">
+                        <small class="text-muted">
+                            Validado por la unidad de atención de público.<br>
+                            Ilustrísima Corte de Apelaciones de Valdivia
+                        </small>
+                    </p>
                 </div>
             </div>
             <?php
-        }else{
+        } else {
             ?>
             <div class="col-md-4">
-                <img src="images/no-validado.png" class="card-img" alt="..." >
+                <img src="images/no-validado.png" class="card-img" alt="...">
             </div>
             <div class="col-md-8">
-                <div class="card-body" >
-                    
+                <div class="card-body">
                     <h5 class="card-title">Validación caducada</h5>
-                    <p class="card-text mb-5">Sr/Sra <?php echo $row[1];?> su validación de identidad se encuentra caducada, por favor realice el proceso de validación nuevamente.</p>
-                    <p class="card-text">Caducada el: <?php echo $row[6];?></p>
-
+                    <p class="card-text mb-5">
+                        Sr/Sra <?php echo htmlspecialchars($row[1]); ?>,
+                        su validación de identidad se encuentra caducada, por favor realice el proceso de validación nuevamente.
+                    </p>
+                    <p class="card-text">Caducada el: <?php echo htmlspecialchars($row[6]); ?></p>
                 </div>
             </div>
             <?php
         }
-        
     }
+
     
+    mysqli_free_result($query);
 }
+
 if ($_POST['accion'] == '4') {
     ?>
     
@@ -531,26 +344,33 @@ if ($_POST['accion'] == '5') {
 <?php
     if ($_POST['accion'] == '7') {
 ?>
-    <?php 
-     $query = "SELECT * FROM documentos WHERE tipo = 1";
-     $result = mysql_query($query, $link);
-     if ($result) {
-        if (mysql_num_rows($result) > 0) {
-            while($row = mysql_fetch_row($result)){ 
-                $numero = $row[0];
-                $fecha = $row[1];
-                $enlace = "../admin/" . $row[2] ;
-                    ?>
-                <a href="<?php echo $enlace;?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
-                <i class="fa fa-info"></i>
-                    - Edicto <?php echo $numero?>
-                <h6 class="text-warning">Actualizado el <?php echo $fecha ?></h6>
-                </a> 
-                <?php     
-            }   
-        }
+   <?php
+
+
+$sql = "SELECT * FROM documentos WHERE tipo = 1";
+$result = mysqli_query($link, $sql);
+
+if (!$result) {
+    die("Error en la consulta: " . mysqli_error($link));
+}
+
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_row($result)) {
+        $numero = $row[0];
+        $fecha  = $row[1];
+        $enlace = "../admin/" . $row[2];
+        ?>
+        <a href="<?php echo htmlspecialchars($enlace); ?>" target="_blank"
+           class="btn btn-secondary w-100 btn-lg mb-2">
+            <i class="fa fa-info"></i> - Edicto <?php echo htmlspecialchars($numero); ?>
+            <h6 class="text-warning m-0">Actualizado el <?php echo htmlspecialchars($fecha); ?></h6>
+        </a>
+        <?php
     }
-    ?>
+}
+
+mysqli_free_result($result);
+?>
     
    
 <?php
@@ -559,67 +379,7 @@ if ($_POST['accion'] == '5') {
 
     
 }
-if ($_POST['accion'] == '9') {
 
- 
-    $rut = $_POST['rut'];
-    $query=mysql_query("SELECT * FROM costas_isapre WHERE rut = '$rut' ", $link); 
-
-    if(mysql_num_rows($query) == 0)
-    {
-        ?>
-        <h4>No existen datos</h4>
-        <?php
-
-    }else{
-    ?>
-    <h4>Resultado busqueda</h4>
-    <table class="table table-sm table-hover table-responsive">
-        <thead class="thead-dark">
-            <tr>
-            <th scope="col">Rut</th>
-            <th scope="col">Litigante</th>
-            <th scope="col">Rol</th>
-            <th scope="col">Caratulado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            
-            while($row=mysql_fetch_row($query))
-            {
-                ?>
-                <tr>
-                    <td><?php echo $row[0]?></td>
-                    <td><?php echo $row[1]?></td>
-                    <td><?php echo $row[2]?></td>
-                    <td><?php echo $row[3]?></td>
-                </tr>
-                <?php
-            }
-        ?>
-        </tbody>
-    </table>
-    <br>
-    <div class="card">
-        <div class="card-header">
-        Consultados los registros de esta corte, usted cuenta con saldo por concepto de costas por cobrar. Puede dirigirse al enlace indicado más abajo para solicitar transferencia de los mismos a su cuenta bancaria.
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Acceso de Solicitud de giro por Transferencia Electrónica</h5>
-            <p class="card-text">Este acceso permite solicitar que se efectúe mediante transferencia electrónica y directamente a la cuenta que se indique, el depósito consignado por concepto de costas isapre.</p>
-            
-            <p class="card-text">Requisitos: tenga a mano su cédula de identidad.</p>
-            <br>
-            <a href="https://ojv.pjud.cl/kpitec-ojv-web/views/login_ci.html#login_box" target="_blank" class="btn btn-primary">Entrar aquí a tramite fácil</a>
-        </div>
-        <div class="card-footer">
-            En caso de dificultad, acceder a manual <a target="_blank" href="adjuntos/manual_tramite_facil.pdf">aquí</a>.
-        </div>
-    </div>
-        <?php
-     }
-}
 
 //Reajuste cuantias
 if ($_POST['accion'] == '10') { 
@@ -627,11 +387,11 @@ if ($_POST['accion'] == '10') {
    
     $fechaActual = date('Y-m-d');
     $query = "SELECT * FROM documentos WHERE tipo = 2  AND '$fechaActual' BETWEEN fecha1 AND fecha2";
-    $result = mysql_query($query, $link);
+    $result = mysqli_query($link, $query);
 
     if ($result) {
-        if (mysql_num_rows($result) > 0) {
-            while($row = mysql_fetch_row($result)){
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_row($result)){
                 $enlace = "../admin/" . $row[2] ;
                 ?>
                 <div class="row mt-2">
@@ -662,7 +422,7 @@ if ($_POST['accion'] == '10') {
             echo "No se encontró ningún enlace del tipo 2.";
         }
     } else {
-        echo "Error en la consulta: " . mysql_error();
+        echo "Error en la consulta: " . mysqli_error($link);
     }
 }
 
@@ -670,11 +430,11 @@ if ($_POST['accion'] == '10') {
 if ($_POST['accion'] == '11') { 
     $fechaActual = date('Y-m-d');
     $query = "SELECT * FROM documentos WHERE tipo = 1  AND '$fechaActual' BETWEEN fecha1 AND fecha2";
-    $result = mysql_query($query, $link);
+    $result = mysqli_query($link, $query);
 
     if ($result) {
-        if (mysql_num_rows($result) > 0) {
-            while($row = mysql_fetch_row($result)){
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_row($result)){
 
                 $enlace = "../admin/" . $row[2] ;
                 ?> <div class="row mt-3">
@@ -695,7 +455,7 @@ if ($_POST['accion'] == '11') {
             echo "No se encontró ningún enlace del tipo 1.";
         }
     } else {
-        echo "Error en la consulta: " . mysql_error();
+        echo "Error en la consulta: " . mysqli_error($link);
     }
 }
 
@@ -704,11 +464,11 @@ if ($_POST['accion'] == '12') {
 
     $fechaActual = date('Y-m-d');
     $query = "SELECT * FROM documentos WHERE tipo = 3  AND '$fechaActual' BETWEEN fecha1 AND fecha2";
-    $result = mysql_query($query, $link);
+    $result = mysqli_query($link, $query);
 
     if ($result) {
-        if (mysql_num_rows($result) > 0) {
-            while($row = mysql_fetch_row($result)){
+        if (mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_row($result)) {
                 $nombre = $row[5];
                 $enlace = "../admin/" . $row[2] ;
                 ?>
@@ -731,7 +491,7 @@ if ($_POST['accion'] == '12') {
             echo "No se encontró ningún enlace del tipo 3.";
         }
     } else {
-        echo "Error en la consulta: " . mysql_error();
+        echo "Error en la consulta: " . mysqli_error($link);
     }
 }
 
