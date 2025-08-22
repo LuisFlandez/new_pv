@@ -130,15 +130,16 @@ if ($accion === '3') {
 
     if (mysqli_num_rows($query) === 0) {
         ?>
-        <div class="col-md-4">
-            <img src="images/no-validado.png" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">No existen datos asociados al RUT</h5>
-                <p class="card-text">No existe validación de identidad al RUT ingresado.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <img src="images/no-validado.png" class="card-img" alt="...">
             </div>
-        </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">No existen datos asociados al RUT</h5>
+                    <p class="card-text">No existe validación de identidad al RUT ingresado.</p>
+                </div>
+            </div>
         <?php
     } else {
 
@@ -151,45 +152,48 @@ if ($accion === '3') {
 
         if ($hastaTime !== false && $hoyTime <= $hastaTime) {
             ?>
-            <div class="col-md-4">
-                <img src="images/validado.png" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body" style='background-image: url("images/corte_fondo.png");'>
-                    <h5 class="card-title"><?php echo htmlspecialchars($row[1]); ?></h5>
-                    <p class="card-text">
-                        Identidad validada correctamente, desde el
-                        <?php echo htmlspecialchars($row[5]); ?>
-                        hasta el
-                        <?php echo htmlspecialchars($row[6]); ?>
-                    </p>
-                    <?php if (!empty($row[2])) { ?>
-                        <p class="card-text">Correo de contacto: <?php echo htmlspecialchars($row[2]); ?></p>
-                    <?php } ?>
-                    <p class="card-text text-center mt-5">
-                        <small class="text-muted">
-                            Validado por la unidad de atención de público.<br>
-                            Ilustrísima Corte de Apelaciones de Valdivia
-                        </small>
-                    </p>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="images/validado.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" style='background-image: url("images/corte_fondo.png");'>
+                        <h5 class="card-title"><?php echo htmlspecialchars($row[1]); ?></h5>
+                        <p class="card-text">
+                            Identidad validada correctamente, desde el
+                            <?php echo htmlspecialchars($row[5]); ?>
+                            hasta el
+                            <?php echo htmlspecialchars($row[6]); ?>
+                        </p>
+                        <?php if (!empty($row[2])) { ?>
+                            <p class="card-text">Correo de contacto: <?php echo htmlspecialchars($row[2]); ?></p>
+                        <?php } ?>
+                        <p class="card-text text-center mt-5">
+                            <small class="text-muted">
+                                Validado por la unidad de atención de público.<br>
+                                Ilustrísima Corte de Apelaciones de Valdivia
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
             <?php
         } else {
             ?>
-            <div class="col-md-4">
-                <img src="images/no-validado.png" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Validación caducada</h5>
-                    <p class="card-text mb-5">
-                        Sr/Sra <?php echo htmlspecialchars($row[1]); ?>,
-                        su validación de identidad se encuentra caducada, por favor realice el proceso de validación nuevamente.
-                    </p>
-                    <p class="card-text">Caducada el: <?php echo htmlspecialchars($row[6]); ?></p>
+           <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="images/no-validado.png" class="card-img" alt="...">
                 </div>
-            </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Validación caducada</h5>
+                        <p class="card-text mb-5">
+                            Sr/Sra <?php echo htmlspecialchars($row[1]); ?>,
+                            su validación de identidad se encuentra caducada, por favor realice el proceso de validación nuevamente.
+                        </p>
+                        <p class="card-text">Caducada el: <?php echo htmlspecialchars($row[6]); ?></p>
+                    </div>
+                </div>
             <?php
         }
     }
