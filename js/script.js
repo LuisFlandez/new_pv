@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
+  if (!nav || !nav.classList.contains('bg-transparent')) return;
   const toggleBg = () => {
     if (window.scrollY > 1) {
       nav.classList.add('bg-white', 'navbar-light');
@@ -17,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
       nav.classList.add('position-fixed', 'top-0');
     } else {
       nav.classList.add('position-absolute');
-      nav.classList.remove('position-fixed','top-0');
+      nav.classList.remove('position-fixed', 'top-0');
     }
   };
   const onScroll = () => {
