@@ -132,7 +132,7 @@ if ($accion === '3') {
         ?>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <img src="images/no-validado.png" class="card-img" alt="...">
+                <img src="img/no-validado.webp" class="card-img" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -182,7 +182,7 @@ if ($accion === '3') {
             ?>
            <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <img src="images/no-validado.png" class="card-img" alt="...">
+                    <img src="img/no-validado.webp" class="card-img" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
