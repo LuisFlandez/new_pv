@@ -1,6 +1,6 @@
 <?php
-include ("conecta.php");
-//include ("../../conecta.php");
+//include ("conecta.php");
+require_once dirname($_SERVER['DOCUMENT_ROOT']) . '/private/conecta.php';
 function fechaCastellano ($fecha) 
 {
     $fecha = substr($fecha, 0, 10);

@@ -142,3 +142,7 @@ img {
   background-color: #5f83bb; /* color del subrayado */
   border-radius: 0px;
 }
+
+.btn-largo {
+  min-width: 600px;     /* ajusta el número a tu gusto: 180–240px */
+}
