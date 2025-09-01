@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>INTEGRACIÓN</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <style>
+            @keyframes moveRightToLeft {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+            .contenedor-texto {
+                overflow: hidden;
+                position: relative;
+            }
+            .texto-en-movimiento {
+                position: absolute;
+                animation: moveRightToLeft 40s linear infinite;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><i class="fa fa-university"></i> ICA Valdivia \ Salas de Audiencias</a> 
+        </nav>
+        <div id ="tabla"> </div>
+        
+    </body>
+</html> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function(){
+
+        var fechaActual = new Date();
+
+        // Obtener las fechas circundantes (2 días anteriores y 2 días posteriores, saltando domingos)
+        var fechasCircundantes = obtenerFechasCircundantes(fechaActual);
+
+        var n1 = fechasCircundantes[0].getDay();
+        var n2 = fechasCircundantes[1].getDay();
+        var n3 = fechasCircundantes[2].getDay(); //ACTUAL
+        var n4 = fechasCircundantes[3].getDay();
+        var n5 = fechasCircundantes[4].getDay();
+        var n6 = fechasCircundantes[5].getDay();
+
+        var d1 = fechasCircundantes[0].getDate();
+        var d2 = fechasCircundantes[1].getDate();
+        var d3 = fechasCircundantes[2].getDate(); //ACTUAL
+        var d4 = fechasCircundantes[3].getDate();
+        var d5 = fechasCircundantes[4].getDate();
+        var d6 = fechasCircundantes[5].getDate();
+
+        var numeroM = fechasCircundantes[2].getMonth(); //MES ACTUAL
+
+        var nombreD = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado"];
+        var nombreMs = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO","JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
+
+        var nombreM = nombreMs[numeroM];
+
+        var f1 = nombreD[n1] + ' ' + d1;
+        var f2 = nombreD[n2] + ' ' + d2;
+        var f3 = nombreD[n3] + ' ' + d3; //ACTUAL
+        var f4 = nombreD[n4] + ' ' + d4;
+        var f5 = nombreD[n5] + ' ' + d5;
+        var f6 = nombreD[n6] + ' ' + d6;
+
+        var dia1 = fechasCircundantes[0].toISOString().split('T')[0];
+        var dia2 = fechasCircundantes[1].toISOString().split('T')[0];
+        var dia3 = fechasCircundantes[2].toISOString().split('T')[0]; //ACTUAL
+        var dia4 = fechasCircundantes[3].toISOString().split('T')[0];
+        var dia5 = fechasCircundantes[4].toISOString().split('T')[0];
+        var dia6 = fechasCircundantes[5].toISOString().split('T')[0];
+       
+        carga_tabla(dia1, dia2, dia3, dia4, dia5, dia6, f1, f2,f3, f4, f5, f6, nombreM);
+
+        setTimeout(refrescar,300000);
+    });
+
+    function refrescar() {
+        location.reload();
+    }
+
+    function carga_tabla(d1, d2, d3, d4, d5, d6, f1, f2,f3, f4, f5, f6, nM){
+        data = {
+            "accion":0,
+            "d1":d1,
+            "d2":d2,
+            "d3":d3,
+            "d4":d4,
+            "d5":d5,
+            "d6":d6,
+            "f1":f1,
+            "f2":f2,
+            "f3":f3,
+            "f4":f4,
+            "f5":f5,
+            "f6":f6,
+            "nM": nM
+        };
+        console.log(data);
+        $.ajax({
+            data: data,
+            url: 'visor_accion.php',
+            method: 'post',
+            success: function(response){
+ 
+                $('#tabla').html(response);
+
+                var alturaInfo = $('#alturaInfoH').height();
+                $('#divInfo').height(alturaInfo);
+
+                var alturaCom = $('#alturaComH').height();
+                $('#divCom').height(alturaCom);
+
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+              console.error('AJAX error:', textStatus, errorThrown);
+              console.error('Status:', jqXHR.status);
+              console.error('Response body:', jqXHR.responseText); // <<— AQUÍ verás el fatal, warning, etc.
+              alert('Error del servidor (' + jqXHR.status + '). Revisa la consola para el detalle.');
+            }
+        })
+    }
+
+    function obtenerFechasCircundantes(fechaActual) {
+        // Crear una copia de la fecha actual
+        var fecha = new Date(fechaActual);
+
+        // Array para almacenar las fechas resultantes
+        var fechasResultantes = [];
+
+        // Agregar las fechas de los dos días anteriores (saltando domingos)
+        for (var i = 0; i < 2; i++) {
+            // Restar un día a la fecha
+            fecha.setDate(fecha.getDate() - 1);
+
+            // Verificar si el día resultante es domingo y ajustar en consecuencia
+            if (fecha.getDay() === 0) {
+            fecha.setDate(fecha.getDate() - 1); // Retroceder dos días para saltar el domingo // 1 día*
+            }
+
+            // Agregar la fecha al array
+            fechasResultantes.unshift(new Date(fecha)); // Usar unshift para agregar al principio del array
+        }
+
+        // Restaurar la fecha al valor original
+        fecha = new Date(fechaActual);
+
+        // Agregar la fecha actual
+        fechasResultantes.push(new Date(fecha));
+
+        // Agregar las fechas de los dos días posteriores (saltando domingos)
+        for (var j = 0; j < 3; j++) {
+            // Sumar un día a la fecha
+            fecha.setDate(fecha.getDate() + 1);
+
+            // Verificar si el día resultante es domingo y ajustar en consecuencia
+            if (fecha.getDay() === 0) {
+            fecha.setDate(fecha.getDate() + 1); // Avanzar un día para saltar el domingo
+            }
+
+            // Agregar la fecha al array
+            fechasResultantes.push(new Date(fecha));
+        }
+
+        return fechasResultantes;
+    }
+
+</script>
