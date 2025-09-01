@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />    <title>Document</title>
+</head>
+
+<style>
+    td, th{
+        border: 1px solid #ccc
+    }
+</style>
+
+<body class="users" style="background-color: #DFDFDF ;">
+
+<div id="menu-lateral"></div>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-1">
+            <a class="btn btn-dark" id="boton-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </a>
+        </div>
+        <div class="col-4" >
+        </div>
+        <div class="col-2" id="resultado">
+        </div>
+        <div class="col-4" >
+        </div>
+        <div class="col-1">
+            <button class="btn btn-dark btn-sm" onclick="modalAgregar()">Agregar Usuarios</button>
+        </div>
+    </div>
+</div>  
+
+<div class="container-fluid" id="usuarios">
+</div>
+
+<div class="modal" tabindex="-1" id="modal_agregar">
+    <div class="modal-dialog">
+        <div class="modal-content"  style="background-color:#EAEAEA">
+
+            <div class="modal-header" style="background-color:#DADADA">
+                <h5 class="modal-title">Agregar Usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="list-group" id="modal-agregar">  
+                       
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col-5" style="text-align: right;">
+                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-dismiss="modal" onclick="insertarUsuario()">Agregar</button>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="modal_mod">
+    <div class="modal-dialog">
+        <div class="modal-content"  style="background-color:#EAEAEA">
+
+            <div class="modal-header" style="background-color:#DADADA">
+                <h5 class="modal-title">Modificar Usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="list-group" id="modal-mod">  
+                       
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-7" style="text-align: left">
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal" onclick="eliminarUsuario()">Eliminar</button>
+                        </div>
+
+                        <div class="col-5" style="text-align: right" >
+                            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-dismiss="modal" onclick="actualizarUsuario()">Actualizar</button>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+<script>
+
+carga_datos();
+
+    function carga_datos(){
+        data = {
+            "accion" : 0,
+        };
+        $.ajax({
+            data: data,
+            url: 'users_accion.php',
+            method: 'post',
+            success: function(response){
+                $('#usuarios').html(response);
+
+                $('#data_table').DataTable();
+            }
+        })
+    }
+
+    function modalAgregar(){
+        $('#modal_agregar').modal('show');
+        data = {
+            "accion": 1,
+        };
+        $.ajax({
+            data: data,
+            url: 'users_accion.php',
+            method: 'post',
+            success: function(response){
+                $('#modal-agregar').html(response);
+            }
+        })
+    }
+
+    function modalModificar(rut, valorS){
+        $('#modal_mod').modal('show');
+
+        data = {
+            "accion": 3,
+            "rut": rut,
+            "valorS":  valorS
+        };
+        $.ajax({
+            data: data,
+            url: 'users_accion.php',
+            method: 'post',
+            success: function(response){
+                $('#modal-mod').html(response);
+            }
+        })
+    }
+
+    function insertarUsuario(){
+        var rut = $('#rut').val();
+        var nombre = $('#nombre').val();
+        var correo = $('#correo').val();
+        var cargo = $('#option').val();
+
+        if (rut == "" || nombre == "" || correo == "" || cargo == null){
+            $('#resultado').html('<div class="alert alert-danger text-center" role="alert">Debe llenar todos los campos </div>');
+            setTimeout(function() { 
+				$('#resultado').html("");
+			}, 5000);
+        }else{
+            data = {
+            "accion" : 2,
+            "rut": rut,
+            "nombre": nombre,
+            "correo": correo,
+            "cargo": cargo
+            };
+            $.ajax({
+                data: data,
+                url: 'users_accion.php',
+                method: 'post',
+                success: function(response){
+                    carga_datos();
+                    $('#resultado').html(response);
+                    setTimeout(function() { 
+				        $('#resultado').html("");
+				    }, 5000);
+                }
+            })
+        }
+    }
+
+    function actualizarUsuario(){
+
+        var rut = $('#rut').val();
+        var nombre = $('#nombre').val();
+        var correo = $('#correo').val();
+        var cargo = $('#option').val();
+
+        if (rut == "" || nombre == "" || correo == "" || cargo == null){
+            $('#resultado').html('<div class="alert alert-danger text-center" role="alert">Debe llenar todos los campos </div>');
+            setTimeout(function() { 
+				$('#resultado').html("");
+			}, 5000);
+        }
+
+        data = {
+            "accion" : 4,
+            "rut": rut,
+            "nombre": nombre,
+            "correo": correo,
+            "cargo": cargo
+        };
+        $.ajax({
+            data: data,
+            url: 'users_accion.php',
+            method: 'post',
+            success: function(response){
+                carga_datos();
+                $('#resultado').html(response);
+                    setTimeout(function() { 
+				        $('#resultado').html("");
+				    }, 5000);
+            }
+        })
+    }
+
+    function eliminarUsuario(){
+        var rut = $('#rut').val();
+
+        data = {
+            "accion" : 5,
+            "rut": rut,
+        };
+        $.ajax({
+            data: data,
+            url: 'users_accion.php',
+            method: 'post',
+            success: function(response){
+                carga_datos();
+                $('#resultado').html(response);
+                setTimeout(function() { 
+				$('#resultado').html("");
+				}, 5000);
+            }
+        })
+    }
+
+</script>

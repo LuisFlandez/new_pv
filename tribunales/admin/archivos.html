@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
+
+    <title>Admin</title>
+
+</head>
+<style>
+    body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #495057;
+}
+
+input[type="text"], select, input[type="file"],input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body class="archivos">
+
+<div id="menu-lateral"></div>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-1">    
+            <a class="btn btn-dark" id="boton-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </a>
+        </div>
+        <div class="col-10 shadow p-4">
+            <div id="mverifica">
+            </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-3"> 
+    </div>
+</div>
+
+    <h3 style="text-align: center;">Subir documento</h3>
+<div class="container">
+    <div class="row mx-auto">
+        <div class="col-3"></div>
+    
+        <div class=" col-6 shadow p-6">
+
+            <form action="archivos_accion.php" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control">
+                   
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="fecha1">Fecha desde:</label>
+                            <input type="date" id="fecha1" name="fecha1" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="fecha2">Fecha hasta:</label>
+                            <input type="date" id="fecha2" name="fecha2" class="form-control">
+                        </div>
+                    </div>
+                    <label for="tipo">Tipo:</label>
+                    <select class="form-control" name="tipo_update" id="tipo_update">
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="1">Edicto</option>
+                        <option value="2">Reajuste de Cuantía</option>
+                        <option value="3">Acuerdos de Pleno</option>
+                    </select>
+                </div>
+                
+                 <div class="form-group">
+                     <label for="archivo">Elegir archivo:</label>
+                     <input type="file" class="form-control-file" name="archivo" id="archivo_update">
+                 </div>   
+                <br>
+            </form>  
+                <button class="btn btn-primary float-end" onclick="updateaa()">Subir Archivo</button>
+                      
+        </div>  
+
+        <div class="col-3"></div>
+        </div>
+</div> 
+        <div class="row mt-3">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div id="resultado"></div>
+            </div>
+            <div class="col-4"></div>
+
+        </div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+<script>
+
+function updateaa(){
+		var parametros = new FormData();
+        parametros.append('nombre', $('#nombre').val());
+		parametros.append('tipo_update',$('#tipo_update').val());
+        parametros.append('archivo_update', $('#archivo_update')[0].files[0]);
+        parametros.append('fecha1', $ ('#fecha1').val());
+        parametros.append('fecha2', $ ('#fecha2').val());
+		//console.log('parametros:', parametros);
+
+		if(parametros.get('tipo_update') == "" || parametros.get('nombre') == "" || parametros.get('archivo_update') == "" ){
+			$('#resultado').html("<div class='alert alert-danger text-center' role='alert'> Debe completar el formulario </div>");
+			
+		}else{
+			parametros.append('accion', '4');
+			$.ajax({
+				url: 'archivos_accion.php',
+				type: 'POST',
+				contentType: false,
+				data: parametros,
+				processData: false,
+				cache: false, 
+				success:  function (response) {
+					$('#resultado').html(response);
+					setTimeout(function() { 
+					$('#resultado').html("");
+					}, 5000);
+				}
+			});
+		}
+	}
+
+    
+</script>
+
+</html>
