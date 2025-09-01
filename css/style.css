@@ -46,10 +46,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-/* Tarjetas para sala de conciliación y prueba */
-.card-sala {
-  min-height: 250px;
-}
 
 /* Imágenes del carrusel general */
 .carousel-item img {
