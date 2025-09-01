@@ -15,5 +15,5 @@ if (!$link) {
 // Establecer codificación UTF-8
 mysqli_set_charset($link, "utf8");
 
-echo "Conexión exitosa a la base de datos.";
+
 ?>

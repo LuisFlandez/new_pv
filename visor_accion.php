@@ -1,14 +1,5 @@
 <?php
-$host = "localhost";
-$user = "pjud_ica2";
-$pass = "Pjud2022@";
-$db   = "pjud_ica";
-
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_errno) {
-    die("Error de conexión MySQLi: " . $conn->connect_error);
-}
-$conn->set_charset("utf8mb4");
+require_once dirname($_SERVER['DOCUMENT_ROOT']) . '/private/conecta.php';
 
 if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
     // --- POST ---
@@ -36,7 +27,7 @@ if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
     $array_conf = [];
 
     // --- salas: posicion, fecha, rut, sala (entre d1 y d6)
-    $stmt = $conn->prepare("SELECT posicion, fecha, rut, sala FROM salas WHERE fecha BETWEEN ? AND ?");
+    $stmt = $link->prepare("SELECT posicion, fecha, rut, sala FROM salas WHERE fecha BETWEEN ? AND ?");
     $stmt->bind_param("ss", $d1, $d6);
     $stmt->execute();
     $res = $stmt->get_result();
@@ -50,7 +41,7 @@ if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
     $stmt->close();
 
     // --- usuarios: SELECT * FROM user
-    $sql_1 = $conn->query("SELECT * FROM user");
+    $sql_1 = $link->query("SELECT * FROM user");
     while ($row = $sql_1->fetch_row()) {
         // mapeo igual que antes: [$row[1], $row[2], $row[4]]
         $usuarios[$row[0]] = [$row[1], $row[2], $row[4]];
@@ -59,7 +50,7 @@ if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
 
     // --- comentarios sala 1 (fecha = d3, tipo=publico, sala=1)
     $comentarios1 = [];
-    $stmt = $conn->prepare("SELECT * FROM comentario WHERE fecha = ? AND tipo = 'publico' AND sala = 1");
+    $stmt = $link->prepare("SELECT * FROM comentario WHERE fecha = ? AND tipo = 'publico' AND sala = 1");
     $stmt->bind_param("s", $d3);
     $stmt->execute();
     $res = $stmt->get_result();
@@ -70,7 +61,7 @@ if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
 
     // --- comentarios sala 2
     $comentarios2 = [];
-    $stmt = $conn->prepare("SELECT * FROM comentario WHERE fecha = ? AND tipo = 'publico' AND sala = 2");
+    $stmt = $link->prepare("SELECT * FROM comentario WHERE fecha = ? AND tipo = 'publico' AND sala = 2");
     $stmt->bind_param("s", $d3);
     $stmt->execute();
     $res = $stmt->get_result();
@@ -80,7 +71,7 @@ if (isset($_POST['accion']) && (int)$_POST['accion'] === 0) {
     $stmt->close();
 
     // --- tabla_confirma: fechas confirmadas entre d1 y d6
-    $stmt = $conn->prepare("SELECT fecha FROM tabla_confirma WHERE fecha BETWEEN ? AND ?");
+    $stmt = $link->prepare("SELECT fecha FROM tabla_confirma WHERE fecha BETWEEN ? AND ?");
     $stmt->bind_param("ss", $d1, $d6);
     $stmt->execute();
     $res = $stmt->get_result();
